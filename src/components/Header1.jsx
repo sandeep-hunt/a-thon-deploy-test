@@ -57,14 +57,8 @@ function Header1() {
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <Link onClick={handleShow}>Products</Link>
-                                    <NavDropdown
-                                        title="Services"
-                                        id={`offcanvasNavbarDropdown-expand-${expand}`}
-                                    >
-                                        <NavDropdown.Item as={Link} to="/parts_services" onClick={handleClose}>Parts & Services</NavDropdown.Item>
-                                        <NavDropdown.Item as={Link} to="https://www.serviceplug.in/" target='_blank' onClick={handleClose}>Service Plug</NavDropdown.Item>
-                                    </NavDropdown>
-                                    <Link to="/contact" onClick={handleCloseM}>Agri Robotics</Link>
+                                    <Link to="/parts_services" onClick={handleClose}>Services</Link>
+                                    <Link to="#" onClick={handleClose}>Agri Robotics</Link>
                                     <NavDropdown
                                         title="About us"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -75,7 +69,7 @@ function Header1() {
                                         <NavDropdown.Item as={Link} onClick={downloadFile}>Our Media Kit</NavDropdown.Item>
                                         <NavDropdown.Item as={Link} to="/contact" onClick={handleClose}>Contact</NavDropdown.Item>
                                     </NavDropdown>
-                                    <Link to="https://forms.gle/WMC6rEwevCAYfse57" className='expLinkHead' target='_blank'>Configure products</Link>
+                                    <Link to="https://forms.gle/WMC6rEwevCAYfse57" className='expLinkHead' target='_blank'>Build product</Link>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
