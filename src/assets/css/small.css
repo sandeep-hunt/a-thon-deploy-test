@@ -1,0 +1,493 @@
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* Navbar */
+    .navbar .headPadng {
+        padding: 0 1rem;
+    }
+
+    .heroMdl .modal-content .header-content {
+        margin-bottom: 1rem;
+    }
+
+    .top-banner .tpBnrTxt {
+        font-size: 14px;
+    }
+
+    .expLinkHead {
+        margin-top: .5rem;
+    }
+
+    /* Top banner */
+    .top-banner a {
+        color: var(--black);
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    /* Hero Banner */
+    .heroHead,
+    .heroBottom {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .heroTxt {
+        font-size: 17px;
+    }
+
+    .heroTxtBtm {
+        font-size: 17px;
+    }
+
+    .hero-container {
+        height: 40vh;
+    }
+
+    /* Focus */
+    .madeInd {
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+
+    .madeInd .madeIndImg {
+        width: 60%;
+    }
+
+    .madeInd .madeInd-content {
+        width: 100%;
+    }
+
+    .madeInd .madeInd-content .madeInd-text1 {
+        font-size: 20px;
+    }
+
+    .focusRght {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem !important;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Vision Mission */
+    .vision-container .vision-content {
+        align-items: center;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 30px !important;
+    }
+
+    .section-para {
+        font-size: 18px;
+    }
+
+    /* Product Line */
+    .timeline {
+        margin-top: 5px;
+    }
+
+    .timeline::before {
+        position: none;
+        left: none;
+        top: none;
+        content: ' ';
+        display: none;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        background: none;
+        background: none;
+        background: none;
+        background: none;
+        background: none;
+        background: none;
+        background: none;
+    }
+
+    .productHdTtlBig {
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .direction-l {
+        position: relative;
+        width: 100%;
+        float: none;
+    }
+
+    .direction-r {
+        position: relative;
+        width: 100%;
+        float: none;
+    }
+
+    /* Tactical */
+    .tactical-content {
+        margin-top: .5rem;
+        text-align: center;
+    }
+
+    .tactical-content .tactical-content-body {
+        padding: 1rem;
+    }
+
+    /* Experience */
+    .experience_container {
+        margin-top: .5rem;
+        padding: .5rem 1rem;
+    }
+
+    .experience_container .experience_content {
+        display: flex;
+        width: 100%;
+        padding: 0 .5rem;
+        gap: 0;
+    }
+
+    .expTxt {
+        font-size: 25px;
+        color: var(--white);
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .expTag {
+        color: var(--white);
+        font-size: 14px;
+    }
+
+    /* videoThumb */
+    .video-container .video-content {
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        text-align: center;
+    }
+
+    .video-container .video-content .videoTxt {
+        font-size: 40px;
+    }
+
+    .video-container .video_playBtn {
+        width: 75px;
+    }
+
+    .popUp iframe {
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    /* testimonial */
+
+    .texti-cont {
+        position: static;
+        width: 100%;
+    }
+
+    .texti-cont img {
+        width: 100%;
+        display: block;
+    }
+
+    .texti-cont .overlay-text {
+        display: none;
+    }
+
+    .texti-cont .textboxSm {
+        display: block;
+        background-color: #E5E5D4;
+        padding: .8rem .7rem;
+        width: 100%;
+    }
+
+    .texti-cont .textboxSm .overlay-text-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .texti-cont .textboxSm .overlay-text-bottom .testiName {
+        color: var(--black);
+        margin-bottom: 0;
+    }
+
+    .texti-cont .textboxSm .overlay-text-bottom .textiDesg {
+        color: var(--black);
+        font-size: 12px;
+    }
+
+    .texti-cont .textboxSm .overlay-text-bottom .testimonial-link {
+        font-size: 14px;
+        color: var(--white);
+        background-color: var(--black);
+        padding: .3rem 1rem;
+        border-radius: 4px;
+    }
+
+    /* Product details */
+    .mainContTxt {
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        text-align: center;
+    }
+
+    .product-line-bottom {
+        padding: 2rem 1rem;
+    }
+
+    .ProductOptions .optionTxt {
+        max-width: 0;
+    }
+
+    .ProductOptions .optionTxt h4 {
+        font-size: 55px;
+        font-weight: 600;
+    }
+
+    .ProductOptions img {
+        width: 80%;
+        height: auto;
+        top: -40%;
+        left: 20%;
+    }
+
+    .productVdo {
+        padding: 0 1rem;
+    }
+
+    .productImgSlidr {
+        padding: 0 1rem;
+    }
+
+    .sliderThmbs {
+        display: none;
+    }
+
+    .collabrativeDet .collabrativeDetImg {
+        width: 80%;
+        height: 100%;
+    }
+
+    .adbhutAutonomous .adbhutAutonomous-img {
+        width: 100%;
+    }
+
+    .supportedPartners {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .collabrativeDet .collabrativeDetImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .collabrativeDet .collabrativeDetTxt {
+        margin-top: 1rem;
+    }
+
+    .adbhutAutonomous {
+        padding: 0 1rem;
+    }
+
+    .solutions .solutionsWrapper {
+        flex: 30%;
+    }
+
+    .gallery {
+        padding: 0 1rem;
+    }
+
+    .gallery-wrapper img {
+        margin-bottom: .5rem;
+    }
+
+    /* Experience Center */
+    .experienceSec-top .experienceSec-innerTop {
+        height: 30px;
+    }
+
+    .experienceSec-top .experienceSec-innerBottom {
+        padding: 0 1rem;
+    }
+
+    .experienceSec-top .experienceSec-ExpLogo {
+        position: absolute;
+        top: 16%;
+        left: 9%;
+    }
+
+    .experienceSec-top .experienceSec-ExpLogo>img {
+        width: 60%;
+    }
+
+    
+
+    .experienceSection .experienceSec-bottom {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .experienceSection .experienceSec-bottom .experienceSecbtn-inner {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        width: 100%;
+    }
+
+    .experienceSecbtn-inner>h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .experienceSection .experienceSec-bottom .experienceSecbtn-innerRg {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .experienceSection .experienceSec-bottom .experienceSecbtn-innerRg .experienceSecbtn-innerLk {
+        font-size: 20px;
+    }
+
+    .experienceSecbtn-inner>h2 {
+        font-size: 30px;
+    }
+
+    .experienceCtr {
+        padding: 0 1rem;
+        gap: .5rem;
+        margin-top: 1rem;
+    }
+
+    .experienceHltCtr-bottom .experienceHltCtr-wrapper {
+        top: -15%;
+    }
+
+    .experienceHltCtr-bottom .experienceHltCtr-wrapper .experienceHltCtr-inner {
+        flex-direction: column;
+        margin-top: -14%;
+    }
+
+    .productImgSlidr {
+        margin-top: 0;
+        padding: 0 1rem;
+    }
+
+    .expCtrLoc {
+        flex-direction: column;
+    }
+
+    .expCtrLoc>iframe {
+        width: 100%;
+        height: 350px;
+        padding: 0 1rem;
+    }
+    
+    /* Our Story */
+    .secondSlice {
+        top: -165px;
+    }
+
+    .fourthSlice {
+        top: -190px;
+    }
+
+    .traction .traction-list .traction-listItm:not(:last-child)::after {
+        top: 30px;
+        left: 72%;
+        width: 70%;
+    }
+
+    /* About Us */
+    .timeline.aboutEvolve .direction-l {
+        width: 100%;
+        left: 0;
+    }
+
+    .timeline.aboutEvolve .direction-r {
+        width: 100%;
+        right: 0;
+    }
+
+    .timeline.aboutEvolve .direction-r .product_title {
+        text-align: left;
+    }
+
+    .team {
+        gap: .5rem;
+        margin-top: .5rem;
+    }
+
+    .productImgSlidr.facilities {
+        margin-top: 2rem;
+    }
+
+    .productImgSlidr .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 0;
+        text-align: center;
+    }
+
+    footer .footer-top {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border-bottom: 1px solid var(--black);
+        padding-bottom: .5rem;
+    }
+    
+    footer .footer-top .footer-topLF {
+        flex: 100%;
+    }
+    
+    footer .footer-top .footer-topLF p {
+        font-size: 14px;
+    }
+    
+    footer .footer-top .footer-topMD {
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer .footer-top .footer-topRT {
+        flex: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer .footer-top .footer-topRT .footer-inner {
+        display: flex;
+        gap: .5rem;
+    }
+    
+    footer .footer-bottom {
+        margin-top: .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: .5rem;
+    }
+    
+    footer .footer-bottom .footer-bottomLF {
+        display: flex;
+        justify-content: center;
+        gap: .5rem;
+    }
+}

@@ -1,0 +1,416 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Navbar */
+    .navbar .headPadng {
+        padding: 0 1rem;
+    }
+
+    .heroMdl .modal-content .header-content {
+        margin-bottom: 1rem;
+    }
+
+    .top-banner .tpBnrTxt {
+        font-size: 16px;
+    }
+
+    .expLinkHead {
+        margin-top: .5rem;
+    }
+
+    /* Top banner */
+    .top-banner a {
+        color: var(--black);
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    /* Hero Banner */
+    .heroHead,
+    .heroBottom {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .heroTxt {
+        font-size: 20px;
+    }
+
+    .heroTxtBtm {
+        font-size: 20px;
+    }
+
+    .hero-container {
+        height: 40vh;
+    }
+
+    /* Focus */
+    .madeInd {
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+
+    .madeInd .madeIndImg {
+        width: 60%;
+    }
+
+    .madeInd .madeInd-content {
+        width: 100%;
+    }
+
+    .madeInd .madeInd-content .madeInd-text1 {
+        font-size: 20px;
+    }
+
+    .focusRght {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem !important;
+    }
+
+    /* Vision Mission */
+    .vision-container .vision-content {
+        padding: 1rem 0;
+    }
+
+    .section-title {
+        font-size: 32px !important;
+    }
+
+    .section-para {
+        font-size: 18px;
+    }
+    
+    /* Product line */
+    .direction-l {
+        position: relative;
+        width: 45%;
+        float: left;
+    }
+
+    .direction-r {
+        position: relative;
+        width: 45%;
+        float: right;
+    }
+
+    /* Tactical */
+    .tactical-content {
+        margin-top: .5rem;
+        text-align: center;
+    }
+
+    .tactical-content .tactical-content-body {
+        padding: 1rem;
+    }
+
+    /* Experience */
+    .experience_container {
+        margin-top: .5rem;
+        padding: .5rem 1rem;
+    }
+
+    .experience_container .experience_content {
+        display: flex;
+        width: 100%;
+        padding: 0 2rem;
+        gap: 0;
+    }
+
+    .expTxt {
+        font-size: 32px;
+        color: var(--white);
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .expTag {
+        color: var(--white);
+        font-size: 18px;
+    }
+
+    .expCtrLoc {
+        flex-direction: column;
+    }
+
+    /* videoThumb */
+    .video-container {
+        height: 50vh;
+    }
+
+    .video-container .video-content {
+        top: 50%;
+        left: 5%;
+        transform: translate(-5%, -50%);
+    }
+
+    .video-container .video-content .videoTxt {
+        font-size: 45px;
+    }
+
+    .video-container .video_playBtn {
+        width: 75px;
+    }
+
+    .popUp iframe {
+        padding: 0 1rem;
+        width: 80%;
+        height: 75%;
+    }
+
+    /* testimonial */
+
+    .texti-cont {
+        position: static;
+        width: 100%;
+    }
+
+    .texti-cont img {
+        width: 100%;
+        display: block;
+    }
+
+    .texti-cont .overlay-text {
+        display: none;
+    }
+
+    .texti-cont .textboxSm {
+        display: block;
+        background-color: #E5E5D4;
+        padding: .8rem .7rem;
+        width: 100%;
+    }
+
+    .texti-cont .textboxSm .overlay-text-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .texti-cont .textboxSm .overlay-text-bottom .testiName {
+        color: var(--black);
+        margin-bottom: 0;
+    }
+
+    .texti-cont .textboxSm .overlay-text-bottom .textiDesg {
+        color: var(--black);
+        font-size: 12px;
+    }
+
+    .texti-cont .textboxSm .overlay-text-bottom .testimonial-link {
+        font-size: 14px;
+        color: var(--white);
+        background-color: var(--black);
+        padding: .3rem 1rem;
+        border-radius: 4px;
+    }
+
+
+    /* Product details */
+    .mainContTxt {
+        top: 50%;
+        left: 5%;
+        transform: translate(-5%, -50%);
+    }
+
+    .product-line-bottom {
+        padding: 2rem 1rem;
+    }
+
+    .ProductOptions .optionTxt {
+        max-width: 0;
+    }
+
+    .ProductOptions .optionTxt h4 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .ProductOptions img {
+        width: 85%;
+        height: auto;
+        top: -25%;
+        left: 20%;
+    }
+
+    .productVdo {
+        padding: 0 5rem;
+    }
+
+    .productImgSlidr {
+        padding: 0 1rem;
+    }
+
+    .sliderThmbs {
+        display: block;
+        padding: 0 5rem;
+    }
+
+    .collabrativeDet .collabrativeDetImg {
+        width: 80%;
+        height: 100%;
+    }
+
+    .adbhutAutonomous .adbhutAutonomous-img {
+        width: 100%;
+    }
+
+    .supportedPartners {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .collabrativeDet .collabrativeDetImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .collabrativeDet .collabrativeDetTxt {
+        margin-top: 1rem;
+    }
+
+    .adbhutAutonomous {
+        padding: 0 1rem;
+    }
+
+    .solutions .solutionsWrapper {
+        flex: 15%;
+    }
+
+    .gallery-wrapper img {
+        margin-bottom: .5rem;
+    }
+
+    /* Experience Center */
+    .experienceSec-top .experienceSec-innerTop {
+        height: 40px;
+    }
+
+    .experienceSec-top .experienceSec-innerBottom {
+        padding: 0 1rem;
+    }
+
+    .experienceSec-top .experienceSec-ExpLogo {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+    }
+
+    .experienceSec-top .experienceSec-ExpLogo>img {
+        width: 70%;
+    }
+
+    .experienceSection .experienceSec-bottom {
+        width: 100%;
+        height: 75vh;
+    }
+
+    .experienceSection .experienceSec-bottom .experienceSecbtn-inner {
+        top: 50%;
+        left: 15%;
+        transform: translate(-15%, -50%);
+    }
+
+    .experienceSecbtn-inner>h2 {
+        font-size: 40px;
+    }
+
+    .experienceCtr {
+        padding: 0 1rem;
+        gap: .5rem;
+        margin-top: 1rem;
+    }
+    
+    .experienceHltCtr-top {
+        height: 150px;
+    }
+
+    .experienceHltCtr-bottom .experienceHltCtr-wrapper {
+        top: -15%;
+    }
+
+    .experienceHltCtr-bottom .experienceHltCtr-wrapper .experienceHltCtr-inner {
+        margin-top: -8%;
+    }
+
+    .productImgSlidr {
+        margin-top: 0;
+        padding: 0 1rem;
+    }
+
+    .gallery-wrapper img {
+        margin-bottom: .5rem;
+    }
+
+    /* About Us */
+    .aboutCont {
+        max-width: 100% !important;
+        padding: 0 1rem;
+    }
+
+    .timeline.aboutEvolve .direction-l {
+        width: 35%;
+        left: 12%;
+    }
+
+    .timeline.aboutEvolve .direction-r {
+        width: 35%;
+        right: 12%;
+    }
+
+    .timeline.aboutEvolve .direction-r .product_title {
+        text-align: left;
+    }
+
+    .team {
+        gap: .5rem;
+        margin-top: .5rem;
+    }
+
+    .team .card .card-body .team-content .team-name {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .team .card .card-body .team-content .team-desig {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .productImgSlidr.facilities {
+        margin-top: 2rem;
+    }
+
+    .productImgSlidr .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* Our Story */
+    .secondSlice {
+        top: -130px;
+    }
+
+    .fourthSlice {
+        top: -190px;
+    }
+
+    .traction .traction-list .traction-listItm:not(:last-child)::after {
+        top: 30px;
+        left: 72%;
+        width: 70%;
+    }
+
+    /* Footer  */
+    .footImg {
+        width: 45%;
+    }
+    
+    footer .footer-bottom .footer-bottomLF {
+        gap: .5rem;
+    }
+    
+
+}
