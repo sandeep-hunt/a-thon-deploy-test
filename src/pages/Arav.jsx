@@ -10,6 +10,7 @@ import Arav3 from '../assets/images/rovers/rovers/arav/arav3.png'
 import Arav4 from '../assets/images/rovers/rovers/arav/arav4.png'
 import Arav5 from '../assets/images/rovers/rovers/arav/arav5.png'
 import Arav6 from '../assets/images/rovers/rovers/arav/arav1.png'
+import StickyCont from '../components/StickyCont';
 
 const Arav = () => {
   const [loading, setLoading] = useState(true);
@@ -24,17 +25,18 @@ const Arav = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>A-THON | Arav</title>
+        <title>A-THON | Ashva 4S</title>
       </Helmet>
       {loading ? (
         <Preloader />
       ) : (
         <>
-        <Header1 />
+        <Header1 caseType='4s'/>
+        <StickyCont />
           <div className="mainVdoSec arav">
             <Container className='mainCont'>
               <div className="mainContTxt">
-                <h1 className='mainTxt'>Arav</h1>
+                <h1 className='mainTxt'>Ashva 4S</h1>
                 <span className='mainTxtTag'>#ReachTheUnreached</span>
               </div>
               <div className="playBtn">

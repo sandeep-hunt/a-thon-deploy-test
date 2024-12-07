@@ -18,6 +18,7 @@ import ashva6x6_3 from '../assets/images/slider/ashva6x6_3.png'
 import ashva6x6_4 from '../assets/images/slider/ashva6x6_4.png'
 import ashva6x6_5 from '../assets/images/slider/ashva6x6_5.png'
 import ashva6x6_6 from '../assets/images/slider/ashva6x6_6.png'
+import StickyCont from '../components/StickyCont';
 
 const slides = [
   {
@@ -64,7 +65,8 @@ const Ashva6x6 = () => {
         <Preloader />
       ) : (
         <>
-          <Header1 />
+          <Header1 caseType='6x6'/>
+          <StickyCont />
           <Swiper
             spaceBetween={0}
             navigation={false}

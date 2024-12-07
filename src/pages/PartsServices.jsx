@@ -1,12 +1,21 @@
 import React, { useState, useEffect } from 'react'
-import { Row, Col, Container, Button } from 'react-bootstrap';
+import { Row, Col, Container, Button, Card, CardBody } from 'react-bootstrap';
 import Preloader from '../components/Preloader'
 import { Helmet } from 'react-helmet';
 import Header1 from '../components/Header1';
 import WarrantyCoverage from '../assets/docs/a-thon_warranty_coverage.pdf'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGears, faShoppingCart, faHeadphonesSimple } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import ServicePlugLogo from '../assets/images/misc/serviceplug_logo.svg'
+import Modal from 'react-bootstrap/Modal';
 
 const PartsServices = () => {
   const [loading, setLoading] = useState(true);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,7 +27,7 @@ const PartsServices = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>A-THON | Parts & Services</title>
+        <title>A-THON | Service & Support</title>
       </Helmet>
       {loading ? (
         <Preloader />
@@ -26,10 +35,57 @@ const PartsServices = () => {
         <>
           <Header1 />
           <div className="partsserv_head">
-            <h3 className='text-center'>Parts & Services</h3>
+            <h3 className='text-center'>Service & Support</h3>
           </div>
           <div className="partsserv_cont">
             <Container>
+
+              <Row>
+                <Col sm={12} md={3}>
+                  <Card className=' h-100'>
+                    <CardBody>
+                      <div className="d-flex align-items-center flex-column text-center">
+                        <FontAwesomeIcon style={{ fontSize: `50px` }} icon={faGears} />
+                        <Link className='mt-2' onClick={handleShow}><h5>Book a Service</h5></Link>
+                        <span style={{ fontSize: `14px` }}>Register here for getting your vehicle serviced hassle free</span>
+                      </div>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col sm={12} md={3}>
+                  <Card className=' h-100'>
+                    <CardBody>
+                      <div className="d-flex align-items-center flex-column text-center">
+                        <FontAwesomeIcon style={{ fontSize: `50px` }} icon={faShoppingCart} />
+                        <Link className='mt-2'><h5>Order Spares</h5></Link>
+                        <span style={{ fontSize: `14px` }}>Get genuine, high-quality original parts delivered to your doorstep with guaranteed authenticity and reliability.</span>
+                      </div>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col sm={12} md={3}>
+                  <Card className=' h-100'>
+                    <CardBody>
+                      <div className="d-flex align-items-center flex-column text-center">
+                        <FontAwesomeIcon style={{ fontSize: `50px` }} icon={faHeadphonesSimple} />
+                        <Link to="https://support.a-thonallterrain.com/" target='_blank' className='mt-2'><h5>Support Portal</h5></Link>
+                        <span style={{ fontSize: `14px` }}>Experience seamless assistance with our customer support portal, offering quick solutions and reliable service at your fingertips.</span>
+                      </div>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col sm={12} md={3}>
+                  <Card className=' h-100'>
+                    <CardBody>
+                      <div className="d-flex align-items-center flex-column text-center">
+                        <img src={ServicePlugLogo} style={{ width: `50px` }} alt="" />
+                        <Link to="https://www.serviceplug.in/" target='_blank' className='mt-2'><h5>Service Plug</h5></Link>
+                        <span style={{ fontSize: `14px` }}>Locate A-THON trained and certified mechanics and garages near you effortlessly with our trusted partner, Service Plug.</span>
+                      </div>
+                    </CardBody>
+                  </Card>
+                </Col>
+              </Row>
               <div className='mt-4'>
                 <h5>Our Commitment to You</h5>
                 <ul>
@@ -113,6 +169,16 @@ const PartsServices = () => {
               </div>
             </Container>
           </div>
+
+          {/* Modal */}
+          <Modal show={show} size='xl' onHide={handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>Book a Service</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+            <iframe aria-label='Service And Support ' frameborder="0" style={{width: `100%`, height: `550px`}} src='https://forms.zohopublic.in/adminathon/form/ServiceAndSupport2/formperma/XMMHRHIAo_G5jYB5moL_YImGhBawipmpot94993pxIM'></iframe>
+            </Modal.Body>
+          </Modal>
         </>
       )}
     </React.Fragment>

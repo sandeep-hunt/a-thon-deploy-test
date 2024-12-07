@@ -20,6 +20,7 @@ import { Helmet } from 'react-helmet';
 import Header1 from '../components/Header1';
 import { Link } from 'react-router-dom';
 import AshvaBroucher from '../assets/docs/ashva_4x4_brochure.pdf'
+import StickyCont from '../components/StickyCont';
 
 const Ashva = () => {
 
@@ -60,11 +61,12 @@ const Ashva = () => {
         <Preloader />
       ) : (
         <>
-          <Header1 />
+          <Header1 caseType='4x4'/>
+          <StickyCont />
           <div className="mainVdoSec">
             <Container className='mainCont'>
               <div className="mainContTxt">
-                <h1 className='mainTxt'>Ashva</h1>
+                <h1 className='mainTxt'>Ashva 4x4</h1>
                 <span className='mainTxtTag'>#ReachTheUnreached</span>
                 <a href={AshvaBroucher} className='btn brouch_btn' target='_blank'>Download Brochure</a>
               </div>

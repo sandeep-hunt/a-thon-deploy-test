@@ -30,15 +30,15 @@ function App() {
       <Routes>
         <Route path="*" element={<PageNotFound />} />
         <Route path='/' element={<Homepage />} />
-        <Route path='ashva' element={<Ashva />} />
+        <Route path='ashva_4x4' element={<Ashva />} />
         <Route path='ashva_6x6' element={ <Ashva6x6 /> } />
         <Route path='adbhut' element={<Adbhut />} />
-        <Route path='arav' element={<Arav />} />
-        <Route path='test-centre' element={<TestCentre />} />
+        <Route path='ashva_4s' element={<Arav />} />
+        <Route path='experience-centre' element={<TestCentre />} />
         <Route path='our-story' element={<OurStory />} />
         <Route path='team' element={<TeamFacilities />} />
         <Route path='contact' element={<Contact />} />
-        <Route path='parts_services' element={<PartsServices />} />
+        <Route path='service' element={<PartsServices />} />
         <Route path='dealership_opportunity' element={<DealerOppor />} />
         <Route path='terms' element={<Terms />} />
         <Route path='equal_opportunities' element={<Equal_opportunities />} />

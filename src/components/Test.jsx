@@ -9,10 +9,10 @@ const Test = () => {
             <div className="experience_content">
                 <img src={ExpLogo} className='expLogo' alt="experience logo" />
                 <div className="exp-content-inner">
-                    <h5 className='expTxt'>A-thon Test center</h5>
+                    <h5 className='expTxt'>A-thon Experience center</h5>
                     <span className='expTag'>Hoskote, KARNATAKA</span>
                 </div>
-                <Link to="test-centre" className='btnLink'>VISIT </Link>
+                <Link to="experience-centre" className='btnLink'>VISIT </Link>
             </div>
         </div>
     </React.Fragment>

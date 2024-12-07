@@ -22,7 +22,7 @@ const Footer = () => {
                                     <h5 className='text-uppercase'>QUICK LINKS</h5>
                                     <Link to="/">Home</Link>
                                     <Link to="/">Agri & Robotics</Link>
-                                    <Link to="/">Parts & Services</Link>
+                                    <Link to="/">Service</Link>
                                     <Link to="/dealership_opportunity">Become a Dealer</Link>
                                     <Link to="/">Build Your ASHVA</Link>
                                     <Link to="/">Experience Centre</Link>
@@ -43,7 +43,6 @@ const Footer = () => {
                                     <Link to="/">Our Story</Link>
                                     <Link to="/">Team & Facilities</Link>
                                     <Link to="/">Join Our Team</Link>
-                                    <Link to="/">Join Our Network</Link>
                                     <Link to="/">Our Media Kit</Link>
                                     <Link to="/">Contact</Link>
                                 </div>

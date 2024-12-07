@@ -72,7 +72,7 @@ const TestCentre = () => {
                 <h2>Explore your every<br />Uncharted Experience </h2>
               </div>
               <div className="experienceSecbtn-innerRg">
-                <Link className='experienceSecbtn-innerLk' to="https://forms.gle/WMC6rEwevCAYfse57" target="_blank">Get your experience &rarr;</Link>
+                <Link className='experienceSecbtn-innerLk' to="https://zfrmz.in/TXkctOvJ9gonSBGuaG3e" target="_blank">Get your experience &rarr;</Link>
               </div>
             </div>
           </div>

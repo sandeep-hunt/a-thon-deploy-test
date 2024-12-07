@@ -5,14 +5,28 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../assets/images/logo.svg';
 import Modal from 'react-bootstrap/Modal';
 import Ashva from '../assets/images/rovers/header/ashva_header.png'
-import Adbhut from '../assets/images/rovers/header/adbhut_header.png'
 import Arav from '../assets/images/rovers/header/arav_header.png'
 import Ashva6x6 from '../assets/images/rovers/header/ashva6x6_header.png'
 import { Offcanvas } from 'react-bootstrap';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Header1() {
+function Header1({caseType}) {
+
+    const getBuildProductLink = (caseType) => {
+        switch (caseType) {
+            case '4x4':
+                return 'https://forms.zohopublic.in/adminathon/form/AshvaProductConfiguration2/formperma/tHWubqs7Nab5mg3aHMBOHQkRCLGyDLaM2WktTDNXNds?model=Ashva%204X4';
+            case '6x6':
+                return 'https://forms.zohopublic.in/adminathon/form/AshvaProductConfiguration2/formperma/tHWubqs7Nab5mg3aHMBOHQkRCLGyDLaM2WktTDNXNds?model=Ashva%206X6';
+            case 'ut':
+                return 'https://forms.zohopublic.in/adminathon/form/AshvaProductConfiguration2/formperma/tHWubqs7Nab5mg3aHMBOHQkRCLGyDLaM2WktTDNXNds?model=Ashva%20UT';
+            case '4s':
+                return 'https://forms.zohopublic.in/adminathon/form/AshvaProductConfiguration2/formperma/tHWubqs7Nab5mg3aHMBOHQkRCLGyDLaM2WktTDNXNds?model=Ashva%204s';
+            default:
+                return 'https://forms.zohopublic.in/adminathon/form/AshvaProductConfiguration2/formperma/tHWubqs7Nab5mg3aHMBOHQkRCLGyDLaM2WktTDNXNds'; // Default link if no case matches
+        }
+    };
 
     const [show, setShow] = useState(false);
 
@@ -38,7 +52,7 @@ function Header1() {
     return (
         <React.Fragment>
             {['lg'].map((expand) => (
-                <Navbar key={expand} expand={expand} className="bg-white shadow-sm sticky-top">
+                <Navbar key={expand} expand={expand} className="bg-white shadow-sm">
                     <Container fluid className='headPadng'>
                         <Navbar.Brand><Link to="/"><img src={Logo} width="150" /></Link></Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={toggleMenu} />
@@ -57,8 +71,8 @@ function Header1() {
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <Link onClick={handleShow}>Products</Link>
-                                    <Link to="/parts_services" onClick={handleClose}>Services</Link>
-                                    <Link to="#" onClick={handleClose}>Agri Robotics</Link>
+                                    <Link to="/service" onClick={handleClose}>Service</Link>
+                                    <Link to="/adbhut" onClick={handleClose}>Agri Robotics</Link>
                                     <NavDropdown
                                         title="About us"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -69,7 +83,13 @@ function Header1() {
                                         <NavDropdown.Item as={Link} onClick={downloadFile}>Our Media Kit</NavDropdown.Item>
                                         <NavDropdown.Item as={Link} to="/contact" onClick={handleClose}>Contact</NavDropdown.Item>
                                     </NavDropdown>
-                                    <Link to="https://forms.gle/WMC6rEwevCAYfse57" className='expLinkHead' target='_blank'>Build product</Link>
+                                    <Link
+                                        to={getBuildProductLink(caseType)}
+                                        className="expLinkHead"
+                                        target="_blank"
+                                    >
+                                        Build product
+                                    </Link>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
@@ -83,20 +103,20 @@ function Header1() {
                 <Modal.Body>
                     <div className="row">
                         <div className="col-sm-12 col-md-3 header-content">
-                            <Link to="/ashva" className='headerMdlLink'><h5>ASHVA 4x4</h5></Link>
-                            <Link to="/ashva"><img src={Ashva} className='img-fluid' alt="ashva" /></Link>
+                            <Link to="/ashva_4x4" className='headerMdlLink'><h5>ASHVA 4x4</h5></Link>
+                            <Link to="/ashva_4x4"><img src={Ashva} className='img-fluid' alt="ashva 4x4" /></Link>
                         </div>
                         <div className="col-sm-12 col-md-3 header-content">
                             <Link to="/ashva_6x6" className='headerMdlLink'><h5>ASHVA 6x6</h5></Link>
-                            <Link to="/ashva_6x6"><img src={Ashva6x6} className='img-fluid' alt="adbhut" /></Link>
+                            <Link to="/ashva_6x6"><img src={Ashva6x6} className='img-fluid' alt="ashva 6x6" /></Link>
                         </div>
                         <div className="col-sm-12 col-md-3 header-content">
-                            <Link to="/adbhut" className='headerMdlLink'><h5>ADBHUTBOT 6X6</h5></Link>
-                            <Link to="/adbhut"><img src={Adbhut} className='img-fluid' alt="adbhut" /></Link>
+                            <Link to="/ashva_4s" className='headerMdlLink'><h5>ASHVA 4S</h5></Link>
+                            <Link to="/ashva_4s"><img src={Arav} className='img-fluid' alt="ashva 4s" /></Link>
                         </div>
                         <div className="col-sm-12 col-md-3 header-content">
-                            <Link to="/arav" className='headerMdlLink'><h5>ARAV 4x4</h5></Link>
-                            <Link to="/arav"><img src={Arav} className='img-fluid' alt="arav" /></Link>
+                            <Link to="/ashva_4s" className='headerMdlLink'><h5>ASHVA UT</h5></Link>
+                            <Link to="/ashva_4s"><img src={Arav} className='img-fluid' alt="ashva ut" /></Link>
                         </div>
                     </div>
                 </Modal.Body>
