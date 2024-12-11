@@ -4,6 +4,8 @@ import { Container } from 'react-bootstrap';
 import { Helmet } from 'react-helmet'
 import Header1 from '../components/Header1'
 import StickyCont from '../components/StickyCont';
+import DealerIcon from '../assets/images/misc/dealericon.webp'
+import { Link } from 'react-router-dom';
 
 const DealerOppor = () => {
   const [loading, setLoading] = useState(true);
@@ -82,6 +84,10 @@ const DealerOppor = () => {
                 <h5>Become a Dealer Today!</h5>
                 <p>Interested in being part of A-THON’s all-terrain revolution? Take the first step towards joining our exclusive network by filling out the form below. Our team will get in touch to guide you through the process and answer any questions.</p>
                 <p>Join the revolution shaping the future of India’s all-terrain mobility!. Partner with A-THON and drive success, one vehicle at a time.</p>
+              </div>
+              <div className='mb-2 d-flex align-items-center flex-column justify-content-center gap-2'>
+                <img src={DealerIcon} width={40} alt="" />
+                <h6><Link to='https://forms.zohopublic.in/adminathon/form/ATHONDealershipRegistrationForm1/formperma/vn30F7gc-_ZJ72R3xtBWW_D_G97I5LwwD7iJoqtyf78' target='_blank'><u>Click Here</u> </Link>For Channel Partner Application</h6>
               </div>
               <div>
                 <h5>Contact Us</h5>
