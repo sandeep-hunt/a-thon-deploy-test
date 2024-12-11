@@ -21,6 +21,7 @@ import Preloader from '../components/Preloader'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import Header1 from '../components/Header1'
+import StickyCont from '../components/StickyCont'
 
 const Adbhut = () => {
   const [loading, setLoading] = useState(true);
@@ -60,6 +61,7 @@ const Adbhut = () => {
       ) : (
         <>
           <Header1 />
+          <StickyCont />
           <div className="mainVdoSec adbhut">
             <Container className='mainCont'>
               <div className="mainContTxt">

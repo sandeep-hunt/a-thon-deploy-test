@@ -14,14 +14,14 @@ const slides = [
     {
         image: Arav,
         alt_text: "dfsjfisjdfskf",
-        name: "Arav",
-        link: "/arav",
+        name: "Ashva 4S",
+        link: "/ashva_4s",
     },
     {
         image: Adbhut,
         alt_text: "dfsjfisjdfskf",
-        name: "AbhutBot",
-        link: "/adbhut",
+        name: "Ashva UT",
+        link: "/ashva_ut",
     },
 ]
 

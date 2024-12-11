@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import Preloader from '../components/Preloader'
 import Header1 from '../components/Header1'
+import StickyCont from '../components/StickyCont'
 
 const Equal_opportunities = () => {
     const [loading, setLoading] = useState(true);
@@ -20,6 +21,7 @@ const Equal_opportunities = () => {
             ) : (
                 <>
                     <Header1 />
+                    <StickyCont />
                     <Container className='mt-5 mb-5'>
                         <h4 className='text-center'>Equal Opportunities Statement</h4>
                         <div class="mt-4">

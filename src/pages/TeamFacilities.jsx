@@ -5,6 +5,7 @@ import { Container } from 'react-bootstrap';
 import Preloader from '../components/Preloader'
 import { Helmet } from 'react-helmet';
 import Header1 from '../components/Header1';
+import StickyCont from '../components/StickyCont';
 
 const TeamFacilities = () => {
   const [loading, setLoading] = useState(true);
@@ -26,6 +27,7 @@ const TeamFacilities = () => {
       ) : (
         <>
           <Header1 />
+          <StickyCont />
           <Container>
             <Teams />
             <Facilities />

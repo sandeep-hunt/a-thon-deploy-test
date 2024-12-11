@@ -6,6 +6,7 @@ import Vision from '../components/Vision';
 import Preloader from '../components/Preloader'
 import { Helmet } from 'react-helmet';
 import Header1 from '../components/Header1';
+import StickyCont from '../components/StickyCont';
 
 const OurStory = () => {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ const OurStory = () => {
       ) : (
         <>
           <Header1 />
+          <StickyCont />
           <Vision />
           <Container>
             {/* <Evolution /> */}

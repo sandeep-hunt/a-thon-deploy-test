@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import LogoBtm from '../assets/images/logoBtm.svg'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareInstagram, faSquareYoutube, faLinkedin, faSquareFacebook, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
+import { faSquareInstagram, faSquareYoutube, faLinkedin, faSquareFacebook, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import MakeIndia from '../assets/images/misc/made_in_india.png'
 import Modal from 'react-bootstrap/Modal'
 
@@ -11,6 +11,15 @@ const Footer = () => {
     const [showLegal, setShowLegal] = useState(false);
     const handleCloseLegal = () => setShowLegal(false);
     const handleShowLegal = () => setShowLegal(true);
+    const downloadFile = () => {
+        // The file path is relative to the public folder in your React project
+        const filePath = '/a-thon_media_kit.zip';
+        const link = document.createElement('a');
+        link.href = filePath;
+        link.download = 'a-thon_media_kit.zip'; // Specify the file name you want to use for download
+        link.click();
+        setMenuOpen(false)
+    };
     return (
         <React.Fragment>
             <footer>
@@ -21,30 +30,30 @@ const Footer = () => {
                                 <div className="footer-bottomLF">
                                     <h5 className='text-uppercase'>QUICK LINKS</h5>
                                     <Link to="/">Home</Link>
-                                    <Link to="/">Agri & Robotics</Link>
-                                    <Link to="/">Service</Link>
+                                    <Link to="/adbhut">Agri & Robotics</Link>
+                                    <Link to="/service">Service</Link>
                                     <Link to="/dealership_opportunity">Become a Dealer</Link>
-                                    <Link to="/">Build Your ASHVA</Link>
-                                    <Link to="/">Experience Centre</Link>
+                                    <Link to="https://forms.zohopublic.in/adminathon/form/AshvaProductConfiguration/formperma/n7hbf7eGDrGcAWhOWAcPzP5FKRwQ0b-izQcMvzDOUEw" target='_blank'>Build Your ASHVA</Link>
+                                    <Link to="/experience-centre">Experience Centre</Link>
                                 </div>
                             </Col>
                             <Col sm={12} md={3}>
                                 <div className="footer-bottomLF">
                                     <h5 className='text-uppercase'>products</h5>
-                                    <Link to="/">ASHVA 4X4</Link>
-                                    <Link to="/">ASHVA 6X6</Link>
-                                    <Link to="/">ASHVA 4S</Link>
-                                    <Link to="/">ASHVA UT</Link>
+                                    <Link to="/ashva_4x4">ASHVA 4X4</Link>
+                                    <Link to="/ashva_6x6">ASHVA 6X6</Link>
+                                    <Link to="/ashva_4s">ASHVA 4S</Link>
+                                    <Link to="/ashva_ut">ASHVA UT</Link>
                                 </div>
                             </Col>
                             <Col sm={12} md={3}>
                                 <div className="footer-bottomLF">
                                     <h5 className='text-uppercase'>about us</h5>
-                                    <Link to="/">Our Story</Link>
-                                    <Link to="/">Team & Facilities</Link>
-                                    <Link to="/">Join Our Team</Link>
-                                    <Link to="/">Our Media Kit</Link>
-                                    <Link to="/">Contact</Link>
+                                    <Link to="/our-story">Our Story</Link>
+                                    <Link to="/team">Team & Facilities</Link>
+                                    <Link to="https://docs.google.com/forms/d/e/1FAIpQLScIgLzjOpQyuqigR-fNXc2PozJPFvyEgzImJMisEDzUnN7Rrg/viewform" target='_blank'>Join Our Team</Link>
+                                    <Link to="#" onClick={downloadFile}>Our Media Kit</Link>
+                                    <Link to="/contact">Contact</Link>
                                 </div>
                             </Col>
                             <Col sm={12} md={3}>
@@ -74,7 +83,7 @@ const Footer = () => {
                                 <Link to="https://www.instagram.com/athon_allterrain/" target='_blank'><FontAwesomeIcon icon={faSquareInstagram} size="2x" /></Link>
                                 <Link to="https://youtube.com/@a-thon?si=UhZbsETEoj_822Kq" target="_blank"><FontAwesomeIcon icon={faSquareYoutube} size="2x" /></Link>
                                 <Link to="https://www.linkedin.com/company/a-thon-allterrain-pvt-ltd/" target="_blank"><FontAwesomeIcon icon={faLinkedin} size="2x" /></Link>
-                                <Link to="https://x.com/ATHON1705" target='_blank'><FontAwesomeIcon icon={faTwitterSquare} size="2x" /></Link>
+                                <Link to="https://x.com/ATHON1705" target='_blank'><FontAwesomeIcon icon={faXTwitter} size="2x" /></Link>
                                 <Link to="https://www.facebook.com/share/cND9rTs3aHFeZcEi" target="_blank"><FontAwesomeIcon icon={faSquareFacebook} size="2x" /></Link>
                             </div>
                         </div>

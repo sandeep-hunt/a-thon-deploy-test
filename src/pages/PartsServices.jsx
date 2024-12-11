@@ -9,6 +9,7 @@ import { faGears, faShoppingCart, faHeadphonesSimple } from '@fortawesome/free-s
 import { Link } from 'react-router-dom';
 import ServicePlugLogo from '../assets/images/misc/serviceplug_logo.svg'
 import Modal from 'react-bootstrap/Modal';
+import StickyCont from '../components/StickyCont';
 
 const PartsServices = () => {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ const PartsServices = () => {
       ) : (
         <>
           <Header1 />
+          <StickyCont />
           <div className="partsserv_head">
             <h3 className='text-center'>Service & Support</h3>
           </div>
@@ -176,7 +178,7 @@ const PartsServices = () => {
               <Modal.Title>Book a Service</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <iframe aria-label='Service And Support ' frameborder="0" style={{width: `100%`, height: `550px`}} src='https://forms.zohopublic.in/adminathon/form/ServiceAndSupport2/formperma/XMMHRHIAo_G5jYB5moL_YImGhBawipmpot94993pxIM'></iframe>
+            <iframe aria-label='Service And Support ' frameborder="0" style={{width: `100%`, height: `550px`}} src='https://forms.zohopublic.in/adminathon/form/ServiceAndSupport1/formperma/gnUBcjbysN5s8cNbQK1TY_ddvB6Bi5UMYgzqNVT2Fmw'></iframe>
             </Modal.Body>
           </Modal>
         </>

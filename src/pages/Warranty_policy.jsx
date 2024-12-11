@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Container } from 'react-bootstrap'
 import Header1 from '../components/Header1'
 import Preloader from '../components/Preloader'
+import StickyCont from '../components/StickyCont'
 
 const Warranty_policy = () => {
     const [loading, setLoading] = useState(true);
@@ -19,6 +20,7 @@ const Warranty_policy = () => {
         ) : (
           <>
             <Header1 />
+            <StickyCont />
             <Container className='mt-5 mb-5'>
                 <h4 className='text-center'>Warranty Policy</h4>
                 <p>This warranty is effective for all from 04.12.2024.</p>

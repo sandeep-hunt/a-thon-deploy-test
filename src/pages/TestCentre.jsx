@@ -32,6 +32,7 @@ import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import Header1 from '../components/Header1'
 import LocationIcon from '../assets/images/misc/locationIcon.svg'
+import StickyCont from '../components/StickyCont'
 
 const TestCentre = () => {
   const [loading, setLoading] = useState(true);
@@ -54,6 +55,7 @@ const TestCentre = () => {
       ) : (
         <>
           <Header1 />
+          <StickyCont />
           <div className="experienceSection">
             <div className="experienceSec-top">
               <div className="experienceSec-innerTop"></div>

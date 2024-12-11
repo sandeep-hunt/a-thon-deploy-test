@@ -12,6 +12,7 @@ import { Helmet } from 'react-helmet'
 import Header1 from '../components/Header1'
 import HomeSlider from '../components/HomeSlider'
 import ProductLine1 from '../components/ProductLine1'
+import StickyCont from '../components/StickyCont'
 
 const Homepage = () => {
   const [loading, setLoading] = useState(true);
@@ -35,6 +36,7 @@ const Homepage = () => {
       ) : (
         <>
           <Header1 />
+          <StickyCont />
           <HeroBanner />
           <Focus />
           <HomeSlider />

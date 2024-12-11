@@ -3,6 +3,7 @@ import Preloader from '../components/Preloader'
 import { Container } from 'react-bootstrap';
 import { Helmet } from 'react-helmet'
 import Header1 from '../components/Header1'
+import StickyCont from '../components/StickyCont';
 
 const DealerOppor = () => {
   const [loading, setLoading] = useState(true);
@@ -26,6 +27,7 @@ const DealerOppor = () => {
       ) : (
         <>
           <Header1 />
+          <StickyCont />
           <div className="partsserv_head_opp">
             <h3 className='text-center'>A-THON Dealership Opportunity</h3>
           </div>

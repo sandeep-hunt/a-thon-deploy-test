@@ -5,6 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Header1 from '../components/Header1';
 import ContactUs from '../assets/images/misc/contactUs.png'
 import { Link } from 'react-router-dom';
+import StickyCont from '../components/StickyCont';
 
 const Contact = () => {
     const [loading, setLoading] = useState(true);
@@ -26,6 +27,7 @@ const Contact = () => {
             ) : (
                 <>
                     <Header1 />
+                    <StickyCont />
                     <Container className='mt-4'>
                         <Row>
                             <Col sm={12}>

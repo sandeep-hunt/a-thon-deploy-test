@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Header1 from '../components/Header1'
 import { Container } from 'react-bootstrap'
 import Preloader from '../components/Preloader'
+import StickyCont from '../components/StickyCont'
 
 const Terms = () => {
     const [loading, setLoading] = useState(true);
@@ -19,6 +20,7 @@ const Terms = () => {
         ) : (
           <>
             <Header1 />
+            <StickyCont />
             <Container className='mt-5 mb-5'>
                 <h4 className='text-center'>Privacy and Policy</h4>
                 <p>Last updated December 03, 2024 </p>

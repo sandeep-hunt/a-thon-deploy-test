@@ -15,7 +15,7 @@ const slides = [
         image: Ashva4x4,
         alt_text: "ashva 4x4",
         name: "Ashva 4x4",
-        link: "/ashva",
+        link: "/ashva_4x4",
     },
     {
         image: Ashva6x6,
