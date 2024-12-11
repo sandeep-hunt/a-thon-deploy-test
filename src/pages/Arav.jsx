@@ -39,9 +39,6 @@ const Arav = () => {
                 <h1 className='mainTxt'>Ashva 4S</h1>
                 <span className='mainTxtTag'>#ReachTheUnreached</span>
               </div>
-              <div className="playBtn">
-                <img src={PlayBtn} className='video_playBtn' alt="play-button" />
-              </div>
             </Container>
           </div>
           <div className="product-line-bottom">
