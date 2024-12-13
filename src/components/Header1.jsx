@@ -116,8 +116,8 @@ function Header1({caseType}) {
                             <Link to="/ashva_4s"><img src={Ashva4s} className='img-fluid' alt="ashva 4s" /></Link>
                         </div>
                         <div className="col-sm-12 col-md-3 header-content">
-                            <Link to="/ashva_4s" className='headerMdlLink'><h5>ASHVA UT</h5></Link>
-                            <Link to="/ashva_4s"><img src={Ashvaut} className='img-fluid' alt="ashva ut" /></Link>
+                            <Link to="/ashva_ut" className='headerMdlLink'><h5>ASHVA UT</h5></Link>
+                            <Link to="/ashva_ut"><img src={Ashvaut} className='img-fluid' alt="ashva ut" /></Link>
                         </div>
                     </div>
                 </Modal.Body>

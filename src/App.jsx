@@ -22,6 +22,7 @@ import Ashva6x6 from './pages/Ashva6x6'
 import Terms from './pages/Terms'
 import Equal_opportunities from './pages/Equal_opportunities'
 import Warranty_policy from './pages/Warranty_policy'
+import AshvaUt from './pages/AshvaUt'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route path='ashva_6x6' element={ <Ashva6x6 /> } />
         <Route path='adbhut' element={<Adbhut />} />
         <Route path='ashva_4s' element={<Arav />} />
+        <Route path='ashva_ut' element={<AshvaUt />} />
         <Route path='experience-centre' element={<TestCentre />} />
         <Route path='our-story' element={<OurStory />} />
         <Route path='team' element={<TeamFacilities />} />
