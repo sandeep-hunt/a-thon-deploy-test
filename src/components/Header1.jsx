@@ -5,7 +5,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../assets/images/logo.svg';
 import Modal from 'react-bootstrap/Modal';
 import Ashva from '../assets/images/rovers/header/ashva_header.png'
-import Arav from '../assets/images/rovers/header/arav_header.png'
+import Ashva4s from '../assets/images/rovers/header/ashva4s_header.png'
+import Ashvaut from '../assets/images/rovers/header/ashvaut_header.png'
 import Ashva6x6 from '../assets/images/rovers/header/ashva6x6_header.png'
 import { Offcanvas } from 'react-bootstrap';
 import React, { useState } from 'react';
@@ -112,11 +113,11 @@ function Header1({caseType}) {
                         </div>
                         <div className="col-sm-12 col-md-3 header-content">
                             <Link to="/ashva_4s" className='headerMdlLink'><h5>ASHVA 4S</h5></Link>
-                            <Link to="/ashva_4s"><img src={Arav} className='img-fluid' alt="ashva 4s" /></Link>
+                            <Link to="/ashva_4s"><img src={Ashva4s} className='img-fluid' alt="ashva 4s" /></Link>
                         </div>
                         <div className="col-sm-12 col-md-3 header-content">
                             <Link to="/ashva_4s" className='headerMdlLink'><h5>ASHVA UT</h5></Link>
-                            <Link to="/ashva_4s"><img src={Arav} className='img-fluid' alt="ashva ut" /></Link>
+                            <Link to="/ashva_4s"><img src={Ashvaut} className='img-fluid' alt="ashva ut" /></Link>
                         </div>
                     </div>
                 </Modal.Body>

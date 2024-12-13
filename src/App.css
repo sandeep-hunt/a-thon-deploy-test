@@ -84,11 +84,11 @@
 }
 
 .hero-container-bg-lw {
-    background-image: url('./assets/images/backgrounds/hero_bg.jpeg');
+    background-image: url('./assets/images/backgrounds/hero_bg.webp');
 }
 
 .hero-container-bg-hr {
-    background-image: url('./assets/images/backgrounds/hero_bg_hr.png');
+    background-image: url('./assets/images/backgrounds/hero_bg_hr.webp');
 }
 
 .hero-content {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import Bg_Img from '../assets/images/backgrounds/hero_bg_hr.png'
+import Bg_Img from '../assets/images/backgrounds/hero_bg_hr.webp'
 
 const HeroBanner = () => {
     

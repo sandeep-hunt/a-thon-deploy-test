@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import Adbhut from '../assets/images/rovers/rovers/adbhut.png'
-import Arav from '../assets/images/rovers/rovers/arav.png'
+import Ashvaut from '../assets/images/rovers/rovers/ashvaut.png'
+import Ashva4s from '../assets/images/rovers/rovers/ashva4s.png'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
@@ -12,14 +12,14 @@ import { FreeMode, Navigation } from 'swiper/modules';
 
 const slides = [
     {
-        image: Arav,
-        alt_text: "dfsjfisjdfskf",
+        image: Ashva4s,
+        alt_text: "Ashva 4s",
         name: "Ashva 4S",
         link: "/ashva_4s",
     },
     {
-        image: Adbhut,
-        alt_text: "dfsjfisjdfskf",
+        image: Ashvaut,
+        alt_text: "Ashva UT",
         name: "Ashva UT",
         link: "/ashva_ut",
     },
