@@ -30,9 +30,6 @@ const ProductLine = () => {
         <React.Fragment>
             <Container>
                 <div className="productSldrCont">
-                    <div className="product-wrapper mb-3">
-                        <span className='productHdTtlBig'>On the horizon...</span>
-                    </div>
                     <Swiper
                         spaceBetween={25}
                         navigation={false}

@@ -53,7 +53,7 @@ function Header1({caseType}) {
     return (
         <React.Fragment>
             {['lg'].map((expand) => (
-                <Navbar key={expand} expand={expand} className="bg-white shadow-sm">
+                <Navbar key={expand} expand={expand} className="bg-black sticky-top shadow-sm">
                     <Container fluid className='headPadng'>
                         <Navbar.Brand><Link to="/"><img src={Logo} width="150" /></Link></Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={toggleMenu} />
