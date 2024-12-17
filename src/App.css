@@ -35,6 +35,35 @@
     color: #0029FF;
 }
 
+.dropdown-menu.show .dropdown-item:hover {
+    background-color: transparent;
+}
+
+.nav-link {
+    padding: 0 !important;
+}
+
+.offcanvas.show {
+    background: var(--black);
+    color: var(--white);
+}
+
+.offcanvas-body .navbar-nav a {
+    color: var(--white);
+}
+
+.navbar-nav .dropdown-menu {
+    background: var(--black);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--white) !important;
+}
+
+.navbar-toggler {
+    border: 1px solid var(--white) !important;
+}
+
 .expLinkHead {
     display: inline-block;
     padding: 5px 16px;
