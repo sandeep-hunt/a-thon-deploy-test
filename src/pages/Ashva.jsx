@@ -30,7 +30,7 @@ const Ashva = () => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   const openPopUp = () => {
