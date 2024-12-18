@@ -7,5 +7,17 @@
     .video-container {
         height: 50vh;
     }
+
+    .ProductOptions .optionTxt h4 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .ProductOptions img {
+        width: 100%;
+        height: auto;
+        top: 10%;
+        right: 20%;
+    }
     
 }

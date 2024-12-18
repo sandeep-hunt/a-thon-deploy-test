@@ -254,20 +254,20 @@
         padding: 2rem 1rem;
     }
 
-    .ProductOptions .optionTxt {
-        max-width: 0;
+    .ProductOptions .row {
+        --bs-gutter-y: 10%;
     }
 
     .ProductOptions .optionTxt h4 {
-        font-size: 55px;
-        font-weight: 600;
+        font-size: 36px;
+        font-weight: 500;
     }
 
     .ProductOptions img {
-        width: 80%;
+        width: 100%;
         height: auto;
-        top: -40%;
-        left: 20%;
+        top: 10%;
+        right: 18%;
     }
 
     .productVdo {

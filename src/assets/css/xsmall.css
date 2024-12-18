@@ -255,14 +255,10 @@
     }
 
     .ProductOptions img {
-        left: 13%;
-    }
-
-    .ProductOptions img {
         width: 80%;
         height: auto;
-        top: -30%;
-        left: 20%;
+        top: 10%;
+        right: 20%;
     }
 
     .productVdo {

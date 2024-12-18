@@ -1,3 +1,18 @@
 @media (min-width: 1200px) and (max-width: 1399.98px) {
 
+    .ProductOptions .row {
+        --bs-gutter-y: 2rem;
+    }
+
+    .ProductOptions .optionTxt h4 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .ProductOptions img {
+        width: 100%;
+        height: auto;
+        top: 10%;
+        right: 20%;
+    }
 }

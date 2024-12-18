@@ -7,6 +7,10 @@ import Option1 from '../assets/images/rovers/rovers/ashva/options/option1.png'
 import Option2 from '../assets/images/rovers/rovers/ashva/options/option2.png'
 import Option3 from '../assets/images/rovers/rovers/ashva/options/option3.png'
 import Option4 from '../assets/images/rovers/rovers/ashva/options/option4.png'
+import Option5 from '../assets/images/rovers/rovers/ashva/options/option5.png'
+import Option6 from '../assets/images/rovers/rovers/ashva/options/option6.png'
+import Option7 from '../assets/images/rovers/rovers/ashva/options/option7.png'
+import Option8 from '../assets/images/rovers/rovers/ashva/options/option8.png'
 import Ashva1 from '../assets/images/rovers/rovers/ashva/ashva1.png'
 import Ashva2 from '../assets/images/rovers/rovers/ashva/ashva2.png'
 import Ashva3 from '../assets/images/rovers/rovers/ashva/ashva3.png'
@@ -15,11 +19,13 @@ import Ashva5 from '../assets/images/rovers/rovers/ashva/ashva5.png'
 import Ashva6 from '../assets/images/rovers/rovers/ashva/ashva6.png'
 import Ashva7 from '../assets/images/rovers/rovers/ashva/ashva7.png'
 import Ashva8 from '../assets/images/rovers/rovers/ashva/ashva8.png'
+import Gradeability from '../assets/images/misc/gradeability.png'
 import Preloader from '../components/Preloader'
 import { Helmet } from 'react-helmet';
 import Header1 from '../components/Header1';
 import AshvaBroucher from '../assets/docs/ashva_4x4_brochure.pdf'
 import StickyCont from '../components/StickyCont';
+import { Link } from 'react-router-dom';
 
 const Ashva = () => {
 
@@ -30,7 +36,7 @@ const Ashva = () => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   const openPopUp = () => {
@@ -365,46 +371,91 @@ const Ashva = () => {
                         </tr>
                       </tbody>
                     </table>
+                  </div>
+                    <Row className='mb-4' style={{padding: `0 2rem`}}>
+                      <Col sm="12" md="4" className='d-flex justify-content-center align-items-center'>
+                      <img src={Gradeability} className='img-fluid' alt="ashav gradeability" />
+                      </Col>
+                      <Col sm="12" md="8" className='d-flex align-items-end'>
+                        <ul>
+                          <li>Terms & Conditions- Tested on A-thon Test Track without any attachments</li>
+                          <li>Specifications subjected to change due to periodic upgrades in the product & technology</li>
+                          <li>All parameters may slightly vary from the actual specifications</li>
+                          <li>As per A-THON recommended attachments</li>
+                        </ul>
+                      </Col>
+                    </Row>
                     <div className='ProductOptions'>
                       <div className="row">
-                        <div className="col-sm-12 col-md-3">
+                        <div className="col-sm-6 col-md-3">
                           <div className='bgAshva1'>
                             <div className="optionTxt">
-                              <h4>Stain Black</h4>
+                              <h4>Racing<br />Red</h4>
                             </div>
                             <img src={Option1} className='img-fluid' alt="" />
                           </div>
                         </div>
-                        <div className="col-sm-12 col-md-3">
+                        <div className="col-sm-6 col-md-3">
                           <div className='bgAshva2'>
                             <div className="optionTxt">
-                              <h4>Foliage Green</h4>
+                              <h4>Electric<br />yellow</h4>
                             </div>
                             <img src={Option2} className='img-fluid' alt="" />
                           </div>
                         </div>
-                        <div className="col-sm-12 col-md-3">
+                        <div className="col-sm-6 col-md-3">
+                          <div className='bgAshva3'>
+                            <div className="optionTxt">
+                              <h4>battle<br />green</h4>
+                            </div>
+                            <img src={Option3} className='img-fluid' alt="" />
+                          </div>
+                        </div>
+                        <div className="col-sm-6 col-md-3">
                           <div className='bgAshva4'>
                             <div className="optionTxt">
-                              <h4>Eclipse black</h4>
+                              <h4>lunar<br />grey</h4>
                             </div>
                             <img src={Option4} className='img-fluid' alt="" />
                           </div>
                         </div>
-                        <div className="col-sm-12 col-md-3">
-                          <div className='bgAshva3'>
+                        <div className="col-sm-6 col-md-3">
+                          <div className='bgAshva5'>
                             <div className="optionTxt">
-                              <h4>Solar blaze</h4>
+                              <h4>mystic<br />black</h4>
                             </div>
-                            <img src={Option3} className='img-fluid' alt="" />
+                            <img src={Option5} className='img-fluid' alt="" />
+                          </div>
+                        </div>
+                        <div className="col-sm-6 col-md-3">
+                          <div className='bgAshva6'>
+                            <div className="optionTxt">
+                              <h4>rock<br />&nbsp;</h4>
+                            </div>
+                            <img src={Option6} className='img-fluid' alt="" />
+                          </div>
+                        </div>
+                        <div className="col-sm-6 col-md-3">
+                          <div className='bgAshva7'>
+                            <div className="optionTxt">
+                              <h4>orange<br />&nbsp;</h4>
+                            </div>
+                            <img src={Option7} className='img-fluid' alt="" />
+                          </div>
+                        </div>
+                        <div className="col-sm-6 col-md-3">
+                          <div className='bgAshva8'>
+                            <div className="optionTxt">
+                              <h4>electric<br />blue</h4>
+                            </div>
+                            <img src={Option8} className='img-fluid' alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="productSpecsBtn">
-                      <p className='herobtn1 text-lowercase text-center'>... and more to come</p>
+                      <p className='herobtn1 text-lowercase text-center'><Link to="https://forms.zohopublic.in/adminathon/form/BookTestDrive1/formperma/mKld_JO84SgHgQchcoYFSbfcdhuuo2tezduouvZjgeE" target='_blank'>Book a Test Ride</Link></p>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
