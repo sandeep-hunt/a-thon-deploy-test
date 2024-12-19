@@ -19,7 +19,7 @@ const Traction = () => {
                             <li className='traction-listItm'>
                                 <div className="secondSlice">
                                     <ul>
-                                        <li>ARAV, ADVIK & ADBHUT</li>
+                                        <li>ASHVA 4S, ASHVA UT & ASHVA 6X6</li>
                                         <li>Ideation & concept creation</li>
                                     </ul>
                                 </div>
@@ -47,8 +47,8 @@ const Traction = () => {
                             <li className='traction-listItm'>
                                 <span>2024</span>
                                 <ul>
-                                    <li>ASHVA UTILITY V-1 Market Entry</li>
-                                    <li>Inaugural revenue from Art Park</li>
+                                    <li>ASHVA 4X4 Market Entry</li>
+                                    <li>Inaugural revenue from ARTPARK</li>
                                 </ul>
                             </li>
                         </ul>

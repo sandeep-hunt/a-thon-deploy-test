@@ -18,15 +18,22 @@
     }
 
     .offcanvas-body .navbar-nav a {
-        color: var(--black);
+        color: var(--white);
+        margin: 5px 0;
+    }
+
+    .offcanvas {
+        background-color: var(--black) !important;
+        --bs-offcanvas-border-color: none !important;
     }
     
     .dropdown-menu.show {
-        background-color: var(--white);
+        background-color: var(--black);
+        border: 1px solid var(--white);
     }
     
     .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-        color: var(--black) !important;
+        color: var(--white) !important;
     }
 
     /* Top banner */
