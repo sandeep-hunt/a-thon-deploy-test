@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 import Preloader from '../components/Preloader'
 import { Helmet } from 'react-helmet'
 import Header1 from '../components/Header1';
-import ashva6x6_45deg from '../assets/images/misc/ashva6x6_45deg.png'
-import ashva6x6_40deg from '../assets/images/misc/ashva6x6_40deg.png'
 import { Col, Row } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
@@ -18,7 +16,16 @@ import ashva6x6_3 from '../assets/images/slider/ashva6x6_3.png'
 import ashva6x6_4 from '../assets/images/slider/ashva6x6_4.png'
 import ashva6x6_5 from '../assets/images/slider/ashva6x6_5.png'
 import ashva6x6_6 from '../assets/images/slider/ashva6x6_6.png'
+import Gradeability from '../assets/images/misc/gradeability.png'
 import StickyCont from '../components/StickyCont';
+import Option1 from '../assets/images/rovers/rovers/adbhut/options/option1.png'
+import Option2 from '../assets/images/rovers/rovers/adbhut/options/option2.png'
+import Option3 from '../assets/images/rovers/rovers/adbhut/options/option3.png'
+import Option4 from '../assets/images/rovers/rovers/adbhut/options/option4.png'
+import Option5 from '../assets/images/rovers/rovers/adbhut/options/option5.png'
+import Option6 from '../assets/images/rovers/rovers/adbhut/options/option6.png'
+import Option7 from '../assets/images/rovers/rovers/adbhut/options/option7.png'
+import Option8 from '../assets/images/rovers/rovers/adbhut/options/option8.png'
 
 const slides = [
   {
@@ -65,7 +72,7 @@ const Ashva6x6 = () => {
         <Preloader />
       ) : (
         <>
-          <Header1 caseType='6x6'/>
+          <Header1 caseType='6x6' />
           <StickyCont />
           <Swiper
             spaceBetween={0}
@@ -90,260 +97,277 @@ const Ashva6x6 = () => {
             <div className="product-sepcs">
               <h4 className="product-spec-title">TECHNICAL SPECIFICATION</h4>
               <div className="row">
-                <div className="col-sm-12 col-md-6">
+                <div className="col-sm-12">
                   <div className="table-responsive">
                     <table className="table">
                       <thead>
                         <tr>
-                          <th scope="col" className="col-6 product-spec-head">Engine 1</th>
-                          <th scope="col" className="col-6"></th>
+                          <th scope="col" colspan="2" className="col-xs-6 col-md-2 product-spec-head">engine & drivetrain</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <th scope="row">HORSEPOWER</th>
-                          <td>85.4 hp (63.7kw) @ 6500 rpm</td>
+                          <th scope="row">Engine Type</th>
+                          <td className="cellBG">4 stroke, v-twin, liquid cooling</td>
                         </tr>
                         <tr>
-                          <th scope="row">TORQUE</th>
-                          <td>101nm @ 5500 rpm</td>
+                          <th scope="row">Power</th>
+                          <td className="cellBG">976 cc, 85.4 hp (63.7kw) @ 6500 rpm</td>
                         </tr>
                         <tr>
-                          <th scope="row">ENGINE</th>
-                          <td>4 stroke, v-twin</td>
+                          <th scope="row">Fuel System</th>
+                          <td className="cellBG">EFI, Gasoline</td>
                         </tr>
                         <tr>
-                          <th scope="row">No. of cylinders</th>
-                          <td>V-TWIN  (2  cylinders)</td>
+                          <th scope="row">Ignition System</th>
+                          <td className="cellBG">Electric Start</td>
                         </tr>
                         <tr>
-                          <th scope="row">COOLING</th>
-                          <td>liquid cooled</td>
+                          <th scope="row">Transmission</th>
+                          <td className="cellBG">Automatic (CVT)</td>
                         </tr>
                         <tr>
-                          <th scope="row">displacement</th>
-                          <td>976 cc</td>
+                          <th scope="row">No. of Gears</th>
+                          <td className="cellBG">L - H - N - R - P  (5 positions)</td>
                         </tr>
                         <tr>
-                          <th scope="row">FUEL SYSTEM</th>
-                          <td>efi, gasoline</td>
+                          <th scope="col" colspan="2" className="col-xs-6 col-md-2 product-spec-head">suspension</th>
                         </tr>
-                        <tr>
-                          <th scope="row">IDLE SPEED</th>
-                          <td>1500±150 rpm</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">COMPRESSION RATIO</th>
-                          <td>10.5:1</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">no. of VALVES</th>
-                          <td>4</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">IGNITION SYSTEM</th>
-                          <td>ELECTRIC START</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">transmission</th>
-                          <td>AUTOMATIC (cvt)</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">GEARBOX</th>
-                          <td>L - H - N - R - P</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table className="table">
-                      <thead>
-                        <tr>
-                          <th scope="col" className="col-6 product-spec-head">DIMENSIONs</th>
-                          <th scope="col" className="col-6"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">DRY WEIGHT(Est.)</th>
-                          <td>1150 kg </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CHASSIS/ CAGE</th>
-                          <td>space frame </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">FUEL CAPACITY</th>
-                          <td>30 L</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">GROUND CLEARANCE</th>
-                          <td>381 <span className='text-lowercase'>mm</span></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CARGO CAPACITY</th>
-                          <td>543 L</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">total Length</th>
-                          <td>4210 <span className='text-lowercase'>mm</span></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">total width</th>
-                          <td>1950 <span className='text-lowercase'>mm</span></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">height</th>
-                          <td>2000 <span className='text-lowercase'>mm</span></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">wheel base</th>
-                          <td>3330 <span className='text-lowercase'>mm</span></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">TRACKWIDTH</th>
-                          <td>1700 <span className='text-lowercase'>mm</span></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table className="table">
-                      <thead>
-                        <tr>
-                          <th scope="col" className="col-6 product-spec-head">brakes & tires/rim</th>
-                          <th scope="col" className="col-6"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">front brakes</th>
-                          <td>disc brake</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">mid & rear brakes</th>
-                          <td>disc brake</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">front tires</th>
-                          <td>31 x 10.5 - r15</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">mid & rear tires</th>
-                          <td>31 x 10.5 - r15</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div className="col-sm-12 col-md-6">
-                  <div className="table-responsive">
-                    <table className="table">
-                      <thead>
-                        <tr>
-                          <th scope="col" className="col-6 product-spec-head">suspension</th>
-                          <th scope="col" className="col-6"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
                         <tr>
                           <th scope="row">front shocks</th>
-                          <td>DUAL RATED COIL OVER WITH NITRO CHARGE PIGGYBACK CANISTER</td>
+                          <td className="cellBG">DUAL RATED COIL OVER WITH NITRO CHARGE PIGGYBACK CANISTER</td>
                         </tr>
                         <tr>
                           <th scope="row">front suspension</th>
-                          <td>double wishbone suspension</td>
+                          <td className="cellBG">double wishbone suspension</td>
                         </tr>
                         <tr>
-                          <th scope="row">mid & rear shocks</th>
-                          <td>DUAL RATED COIL OVER WITH NITRO CHARGE PIGGYBACK CANISTER</td>
+                          <th scope="row">Mid & Rear Shocks</th>
+                          <td className="cellBG">DUAL RATED COIL OVER WITH NITRO CHARGE Piggyback CANISTER</td>
                         </tr>
                         <tr>
-                          <th scope="row">mid & rear suspensions</th>
-                          <td>double wishbone suspension</td>
+                          <th scope="row">Mid & Rear Suspension</th>
+                          <td className="cellBG">double wishbone suspension</td>
                         </tr>
-                      </tbody>
-                    </table>
-                    <table className="table">
-                      <thead>
                         <tr>
-                          <th scope="col" className="col-6 product-spec-head">ADDITIONAL SPECIFICATION</th>
-                          <th scope="col" className="col-6"></th>
+                          <th scope="col" colspan="2" className="col-xs-6 col-md-2 product-spec-head">brakes & tires/rim</th>
                         </tr>
-                      </thead>
-                      <tbody>
+                        <tr>
+                          <th scope="row">Front & Rear</th>
+                          <td className="cellBG">Disc Brake</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Front Tires</th>
+                          <td className="cellBG">31 x 10.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Rear Tires</th>
+                          <td className="cellBG">31 x 10.5</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Wheel Size</th>
+                          <td className="cellBG">Alloy Wheels R15- 7”</td>
+                        </tr>
+                        <tr>
+                          <th scope="col" colspan="2" className="col-xs-6 col-md-2 product-spec-head">DIMENSIONs</th>
+                        </tr>
+                        <tr>
+                          <th scope="row">Length</th>
+                          <td className="cellBG">4210 <span className='text-lowercase'>mm</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Width</th>
+                          <td className="cellBG">1950 <span className='text-lowercase'>mm</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Height</th>
+                          <td className="cellBG">2000 <span className='text-lowercase'>mm</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Wheelbase</th>
+                          <td className="cellBG">3330 <span className='text-lowercase'>mm</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Track width</th>
+                          <td className="cellBG">1700 <span className='text-lowercase'>mm</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Payload Capacity</th>
+                          <td className="cellBG">800 <span className='text-capitalize'>Kg</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Dry Weight</th>
+                          <td className="cellBG">1150 <span className='text-capitalize'>Kg</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Fuel Tank Capacity</th>
+                          <td className="cellBG">30 L</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Ground Clearance</th>
+                          <td className="cellBG">381 <span className='text-lowercase'>mm</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Cargo Capacity</th>
+                          <td className="cellBG">543 L</td>
+                        </tr>
+                        <tr>
+                          <th scope="col" colspan="2" className="col-xs-6 col-md-2 product-spec-head">FEATURES</th>
+                        </tr>
                         <tr>
                           <th scope="row">CARGO SYSTEM</th>
-                          <td>inbuilt cargo box</td>
+                          <td className='cellBG'>inbuilt cargo box</td>
                         </tr>
                         <tr>
-                          <th scope="row">transmission modes</th>
-                          <td>2WD, 4WD, front & rear + Open & lock differential modes, 6x6wd, 4x6wd</td>
+                          <th scope="row">Transmission Modes</th>
+                          <td className='cellBG'>Open & Lock Differential Modes, 6X6 WD, 6X4 WD</td>
                         </tr>
                         <tr>
-                          <th scope="row">elec. power STEERING</th>
-                          <td>yes</td>
+                          <th scope="row">Chassis/ Cage</th>
+                          <td className='cellBG'>Space Frame</td>
                         </tr>
                         <tr>
                           <th scope="row">HITCH TYPE</th>
-                          <td>single point  (Front & rear)</td>
+                          <td className='cellBG'>Single Point (Front & Rear)</td>
                         </tr>
                         <tr>
-                          <th scope="row">LIGHTING</th>
-                          <td>HALOGEN</td>
+                          <th scope="row">Lighting</th>
+                          <td className='cellBG'>Halogen</td>
                         </tr>
                         <tr>
-                          <th scope="row">SEAT BELT</th>
-                          <td>3 POINT/ 4 point</td>
+                          <th scope="row">Seat Belt</th>
+                          <td className='cellBG'>4-point/ 5 point</td>
                         </tr>
                         <tr>
-                          <th scope="row">SEAT TYPE</th>
-                          <td>BUCKET SEAT</td>
+                          <th scope="row">Seat Type</th>
+                          <td className='cellBG'>Bucket Seat</td>
                         </tr>
                         <tr>
-                          <th scope="row">seat capacity</th>
-                          <td>2</td>
+                          <th scope="row">Seating Capacity</th>
+                          <td className='cellBG'>2 Seater</td>
                         </tr>
                         <tr>
-                          <th scope="row">instrumentation</th>
-                          <td>SEMI - DIGITAL INSTRUMENT CLUSTER</td>
+                          <th scope="row">Instrumentation</th>
+                          <td className='cellBG'>Semi Digital Instrument Cluster</td>
                         </tr>
                         <tr>
-                          <th scope="row">SNORKEL</th>
-                          <td>CVT INLET & OUTLET SNORKEL</td>
+                          <th scope="row">Snorkel</th>
+                          <td className='cellBG'>Inlet & Outlet for CVT</td>
                         </tr>
                         <tr>
-                          <th scope="row">GRAVEL GUARD</th>
-                          <td>YES</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table className="table">
-                      <thead>
-                        <tr>
-                          <th scope="col" className="col-6 product-spec-head">ATTACHMENT INTEGRATION CAPABILITIES</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">TOW BEHIND TRAILER</th>
+                          <th scope="row">Gravel Guard</th>
+                          <td className='cellBG'>Yes</td>
                         </tr>
                         <tr>
-                          <th scope="row">3 POINT HITCH</th>
+                          <th scope="col" colspan="2" className="col-xs-6 col-md-2 p-3"></th>
                         </tr>
                         <tr>
-                          <th scope="row">RARE HITCH CARRIER</th>
+                          <th scope="col" colspan="2" className="col-xs-6 col-md-2 product-spec-title">Attachment Integration Capabilities</th>
                         </tr>
                         <tr>
-                          <th scope="row">AGRI ATTACHMENT WITHOUT PTO</th>
+                          <th scope="col" colspan="2" className="col-xs-6 col-md-2">
+                            Tow behind trailer
+                          </th>
+                        </tr>
+                        <tr>
+                          <th scope="col" colspan="2" className="col-xs-6 col-md-2">
+                            3-point hitch
+                          </th>
+                        </tr>
+                        <tr>
+                          <th scope="col" colspan="2" className="col-xs-6 col-md-2">
+                            Rear hitch carrier
+                          </th>
+                        </tr>
+                        <tr>
+                          <th scope="col" colspan="2" className="col-xs-6 col-md-2">
+                            Agri attachment without PTO
+                          </th>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  <Row style={{ padding: `0 25px` }}>
-                    <Col xs={6} sm={6} md={4} className='d-flex justify-content-center align-items-end'>
-                      <img src={ashva6x6_45deg} className='img-fluid' width={150} alt="" />
+                  <Row className='mb-4' style={{ padding: `0 2rem` }}>
+                    <Col sm="12" md="4" className='d-flex justify-content-center align-items-center'>
+                      <img src={Gradeability} className='img-fluid' alt="ashav gradeability" />
                     </Col>
-                    <Col xs={6} sm={6} md={4} className='d-flex justify-center-end align-items-end'>
-                      <img src={ashva6x6_40deg} className='img-fluid' width={150} alt="" />
+                    <Col sm="12" md="8" className='d-flex align-items-end'>
+                      <ul>
+                        <li>Terms & Conditions- Tested on A-thon Test Track without any attachments</li>
+                        <li>Specifications subjected to change due to periodic upgrades in the product & technology</li>
+                        <li>All parameters may slightly vary from the actual specifications</li>
+                        <li>As per A-THON recommended attachments</li>
+                      </ul>
                     </Col>
                   </Row>
+                  <div className='ProductOptions'>
+                    <div className="row">
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva1'>
+                          <div className="optionTxt">
+                            <h4>Racing<br />Red</h4>
+                          </div>
+                          <img src={Option1} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva2'>
+                          <div className="optionTxt">
+                            <h4>Electric<br />yellow</h4>
+                          </div>
+                          <img src={Option2} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva3'>
+                          <div className="optionTxt">
+                            <h4>battle<br />green</h4>
+                          </div>
+                          <img src={Option3} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva4'>
+                          <div className="optionTxt">
+                            <h4>lunar<br />grey</h4>
+                          </div>
+                          <img src={Option4} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva5'>
+                          <div className="optionTxt">
+                            <h4>mystic<br />black</h4>
+                          </div>
+                          <img src={Option5} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva6'>
+                          <div className="optionTxt">
+                            <h4>rock<br />&nbsp;</h4>
+                          </div>
+                          <img src={Option6} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva7'>
+                          <div className="optionTxt">
+                            <h4>orange<br />&nbsp;</h4>
+                          </div>
+                          <img src={Option7} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva8'>
+                          <div className="optionTxt">
+                            <h4>electric<br />blue</h4>
+                          </div>
+                          <img src={Option8} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

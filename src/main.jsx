@@ -16,11 +16,11 @@ const tagManagerArgs = {
 TagManager.initialize(tagManagerArgs);
 
 // Initialize Google Analytics
-ReactGA.initialize("G-5LHK6VTQPW");
-ReactGA.send({
-  hitType: "pageview",
-  page: window.location.pathname,
-});
+// ReactGA.initialize("G-5LHK6VTQPW");
+// ReactGA.send({
+//   hitType: "pageview",
+//   page: window.location.pathname,
+// });
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
