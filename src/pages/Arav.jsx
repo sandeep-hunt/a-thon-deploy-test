@@ -3,6 +3,14 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Preloader from '../components/Preloader'
 import { Helmet } from 'react-helmet';
 import Header1 from '../components/Header1';
+import Option1 from '../assets/images/rovers/rovers/arav/options/option1.png'
+import Option2 from '../assets/images/rovers/rovers/arav/options/option2.png'
+import Option3 from '../assets/images/rovers/rovers/arav/options/option3.png'
+import Option4 from '../assets/images/rovers/rovers/arav/options/option4.png'
+import Option5 from '../assets/images/rovers/rovers/arav/options/option5.png'
+import Option6 from '../assets/images/rovers/rovers/arav/options/option6.png'
+import Option7 from '../assets/images/rovers/rovers/arav/options/option7.png'
+import Option8 from '../assets/images/rovers/rovers/arav/options/option8.png'
 import Arav1 from '../assets/images/rovers/rovers/arav/arav1.png'
 import Arav2 from '../assets/images/rovers/rovers/arav/arav2.png'
 import Arav3 from '../assets/images/rovers/rovers/arav/arav3.png'
@@ -248,6 +256,74 @@ const Arav = () => {
                       </ul>
                     </Col>
                   </Row>
+                  <div className='ProductOptions'>
+                    <div className="row">
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva1'>
+                          <div className="optionTxt">
+                            <h4>Racing<br />Red</h4>
+                          </div>
+                          <img src={Option1} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva2'>
+                          <div className="optionTxt">
+                            <h4>Electric<br />yellow</h4>
+                          </div>
+                          <img src={Option2} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva3'>
+                          <div className="optionTxt">
+                            <h4>battle<br />green</h4>
+                          </div>
+                          <img src={Option3} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva4'>
+                          <div className="optionTxt">
+                            <h4>lunar<br />grey</h4>
+                          </div>
+                          <img src={Option4} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva5'>
+                          <div className="optionTxt">
+                            <h4>mystic<br />black</h4>
+                          </div>
+                          <img src={Option5} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva6'>
+                          <div className="optionTxt">
+                            <h4>rock<br />&nbsp;</h4>
+                          </div>
+                          <img src={Option6} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva7'>
+                          <div className="optionTxt">
+                            <h4>orange<br />&nbsp;</h4>
+                          </div>
+                          <img src={Option7} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva8'>
+                          <div className="optionTxt">
+                            <h4>electric<br />blue</h4>
+                          </div>
+                          <img src={Option8} className='img-fluid' alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

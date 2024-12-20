@@ -12,7 +12,6 @@ import slider3 from '../assets/images/slider/slider3.png'
 import slider4 from '../assets/images/slider/slider4.png'
 import slider5 from '../assets/images/slider/slider5.png'
 import slider6 from '../assets/images/slider/slider6.png'
-import slider7 from '../assets/images/slider/slider7.png'
 
 const slides = [
     {
@@ -39,22 +38,33 @@ const slides = [
         image: slider6,
         alt_text: "ashva 4x4"
     },
-    {
-        image: slider7,
-        alt_text: "ashva 4x4"
-    },
 ]
 
 const HomeSlider = () => {
     return (
         <React.Fragment>
             <Swiper
-                spaceBetween={0}
+                spaceBetween={0} // No space between slides
+                slidesPerView={1} // Default number of slides to show
                 navigation={false}
                 loop={true}
                 autoplay={{
                     delay: 3000, // Time between slides in milliseconds
                     disableOnInteraction: false // Keeps autoplay running even after interaction
+                }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 0, // No space for small screens
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 0, // No space for tablets
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 0, // No space for desktops
+                    },
                 }}
                 modules={[FreeMode, Navigation, Autoplay]}
                 className="mySwiper3"
@@ -71,4 +81,4 @@ const HomeSlider = () => {
     )
 }
 
-export default HomeSlider
+export default HomeSlider;
