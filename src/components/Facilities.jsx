@@ -6,16 +6,30 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import RD0 from '../assets/images/facilities/RD/rd0.png'
 import RD1 from '../assets/images/facilities/RD/rd1.png'
 import RD2 from '../assets/images/facilities/RD/rd2.png'
 import RD3 from '../assets/images/facilities/RD/rd3.png'
 import RD4 from '../assets/images/facilities/RD/rd4.png'
 import RD5 from '../assets/images/facilities/RD/rd5.png'
+import RD6 from '../assets/images/facilities/RD/rd6.png'
+import RD7 from '../assets/images/facilities/RD/rd7.png'
+import RD8 from '../assets/images/facilities/RD/rd8.png'
+import RD9 from '../assets/images/facilities/RD/rd9.png'
+import RD10 from '../assets/images/facilities/RD/rd10.png'
+import RD11 from '../assets/images/facilities/RD/rd11.png'
+import ThumbRD0 from '../assets/images/facilities/RD/rdthumb0.png'
 import ThumbRD1 from '../assets/images/facilities/RD/rdthumb1.png'
 import ThumbRD2 from '../assets/images/facilities/RD/rdthumb2.png'
 import ThumbRD3 from '../assets/images/facilities/RD/rdthumb3.png'
 import ThumbRD4 from '../assets/images/facilities/RD/rdthumb4.png'
 import ThumbRD5 from '../assets/images/facilities/RD/rdthumb5.png'
+import ThumbRD6 from '../assets/images/facilities/RD/rdthumb6.png'
+import ThumbRD7 from '../assets/images/facilities/RD/rdthumb7.png'
+import ThumbRD8 from '../assets/images/facilities/RD/rdthumb8.png'
+import ThumbRD9 from '../assets/images/facilities/RD/rdthumb9.png'
+import ThumbRD10 from '../assets/images/facilities/RD/rdthumb10.png'
+import ThumbRD11 from '../assets/images/facilities/RD/rdthumb11.png'
 import Reli1 from '../assets/images/facilities/ReliEngg/reli1.png'
 import Reli2 from '../assets/images/facilities/ReliEngg/reli2.png'
 import Reli3 from '../assets/images/facilities/ReliEngg/reli3.png'
@@ -134,10 +148,25 @@ function RDPrd() {
                 className="mySwiper2"
             >
                 <SwiperSlide>
+                    <img src={RD0} alt='Colorful flags fluttering in field of A-THON ALL TERRAIN PRIVATE LIMITED facility.'/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={RD10} alt='Colorful flags fluttering in field of A-THON ALL TERRAIN PRIVATE LIMITED facility.'/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={RD11} alt='Colorful flags fluttering in field of A-THON ALL TERRAIN PRIVATE LIMITED facility.'/>
+                </SwiperSlide>
+                <SwiperSlide>
                     <img src={RD1} alt='Colorful flags fluttering in field of A-THON ALL TERRAIN PRIVATE LIMITED facility.'/>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={RD2} alt='A picturesque street in A-THON Plant adorned with trees and buildings'/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={RD6} alt='A picturesque street in A-THON Plant adorned with trees and buildings'/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={RD7} alt='A picturesque street in A-THON Plant adorned with trees and buildings'/>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={RD3} alt='A conference room in the A-THON office featuring a long table surrounded by chairs.'/>
@@ -146,7 +175,16 @@ function RDPrd() {
                     <img src={RD4} alt='A-THON office featuring numerous desks and computers.'/>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <img src={RD8} alt='A-THON office featuring numerous desks and computers.'/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={RD9} alt='A-THON office featuring numerous desks and computers.'/>
+                </SwiperSlide>
+                <SwiperSlide>
                     <img src={RD5} alt='A-THON office space with staff members working on computers.'/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={RD11} alt='A-THON office space with staff members working on computers.'/>
                 </SwiperSlide>
             </Swiper>
             <div className="sliderThmbs" style={{padding: "0 15rem"}}>
@@ -161,10 +199,25 @@ function RDPrd() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
+                        <img src={ThumbRD0} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={ThumbRD10} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={ThumbRD11} />
+                    </SwiperSlide>
+                    <SwiperSlide>
                         <img src={ThumbRD1} />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={ThumbRD2} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={ThumbRD6} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={ThumbRD7} />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={ThumbRD3} />
@@ -173,7 +226,16 @@ function RDPrd() {
                         <img src={ThumbRD4} />
                     </SwiperSlide>
                     <SwiperSlide>
+                        <img src={ThumbRD8} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={ThumbRD9} />
+                    </SwiperSlide>
+                    <SwiperSlide>
                         <img src={ThumbRD5} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={ThumbRD11} />
                     </SwiperSlide>
                 </Swiper>
             </div>

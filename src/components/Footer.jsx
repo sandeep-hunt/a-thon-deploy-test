@@ -31,7 +31,7 @@ const Footer = () => {
                                     <h5 className='text-uppercase'>QUICK LINKS</h5>
                                     <Link to="/">Home</Link>
                                     <Link to="/adbhut">Agri & Robotics</Link>
-                                    <Link to="/service">Service</Link>
+                                    <Link to="/service">Services</Link>
                                     <Link to="/dealership_opportunity">Become a Dealer</Link>
                                     <Link to="https://forms.zohopublic.in/adminathon/form/AshvaProductConfiguration/formperma/n7hbf7eGDrGcAWhOWAcPzP5FKRwQ0b-izQcMvzDOUEw" target='_blank'>Build Your ASHVA</Link>
                                     <Link to="/experience-centre">Experience Centre</Link>

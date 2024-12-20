@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Preloader from '../components/Preloader'
 import { Helmet } from 'react-helmet';
 import Header1 from '../components/Header1';
+import Ashva4sBroucher from '../assets/docs/ashva_4s_brochure.pdf'
 import Option1 from '../assets/images/rovers/rovers/arav/options/option1.png'
 import Option2 from '../assets/images/rovers/rovers/arav/options/option2.png'
 import Option3 from '../assets/images/rovers/rovers/arav/options/option3.png'
@@ -50,6 +51,9 @@ const Arav = () => {
             </Container>
           </div>
           <div className="product-line-bottom">
+            <div className="d-flex justify-content-center">
+              <a href={Ashva4sBroucher} className='btn brouch_btn2' target='_blank'>Download Brochure</a>
+            </div>
             <div className="product-sepcs">
               <h4 className="product-spec-title">TECHNICAL SPECIFICATION</h4>
               <div className="row">

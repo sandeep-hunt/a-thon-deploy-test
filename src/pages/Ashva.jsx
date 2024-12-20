@@ -36,7 +36,7 @@ const Ashva = () => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   const openPopUp = () => {
@@ -372,90 +372,92 @@ const Ashva = () => {
                       </tbody>
                     </table>
                   </div>
-                    <Row className='mb-4' style={{padding: `0 2rem`}}>
-                      <Col sm="12" md="4" className='d-flex justify-content-center align-items-center'>
+                  <Row className='mb-4' style={{ padding: `0 2rem` }}>
+                    <Col sm="12" md="4" className='d-flex justify-content-center align-items-center'>
                       <img src={Gradeability} className='img-fluid' alt="ashav gradeability" />
-                      </Col>
-                      <Col sm="12" md="8" className='d-flex align-items-end'>
-                        <ul>
-                          <li>Terms & Conditions- Tested on A-thon Test Track without any attachments</li>
-                          <li>Specifications subjected to change due to periodic upgrades in the product & technology</li>
-                          <li>All parameters may slightly vary from the actual specifications</li>
-                          <li>As per A-THON recommended attachments</li>
-                        </ul>
-                      </Col>
-                    </Row>
-                    <div className='ProductOptions'>
-                      <div className="row">
-                        <div className="col-sm-6 col-md-3">
-                          <div className='bgAshva1'>
-                            <div className="optionTxt">
-                              <h4>Racing<br />Red</h4>
-                            </div>
-                            <img src={Option1} className='img-fluid' alt="" />
+                    </Col>
+                    <Col sm="12" md="8" className='d-flex align-items-end'>
+                      <ul>
+                        <li>Terms & Conditions- Tested on A-thon Test Track without any attachments</li>
+                        <li>Specifications subjected to change due to periodic upgrades in the product & technology</li>
+                        <li>All parameters may slightly vary from the actual specifications</li>
+                        <li>As per A-THON recommended attachments</li>
+                      </ul>
+                    </Col>
+                  </Row>
+                  <div className='ProductOptions'>
+                    <div className="row">
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva1'>
+                          <div className="optionTxt">
+                            <h4>Racing<br />Red</h4>
                           </div>
+                          <img src={Option1} className='img-fluid' alt="" />
                         </div>
-                        <div className="col-sm-6 col-md-3">
-                          <div className='bgAshva2'>
-                            <div className="optionTxt">
-                              <h4>Electric<br />yellow</h4>
-                            </div>
-                            <img src={Option2} className='img-fluid' alt="" />
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva2'>
+                          <div className="optionTxt">
+                            <h4>Electric<br />yellow</h4>
                           </div>
+                          <img src={Option2} className='img-fluid' alt="" />
                         </div>
-                        <div className="col-sm-6 col-md-3">
-                          <div className='bgAshva3'>
-                            <div className="optionTxt">
-                              <h4>battle<br />green</h4>
-                            </div>
-                            <img src={Option3} className='img-fluid' alt="" />
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva3'>
+                          <div className="optionTxt">
+                            <h4>battle<br />green</h4>
                           </div>
+                          <img src={Option3} className='img-fluid' alt="" />
                         </div>
-                        <div className="col-sm-6 col-md-3">
-                          <div className='bgAshva4'>
-                            <div className="optionTxt">
-                              <h4>lunar<br />grey</h4>
-                            </div>
-                            <img src={Option4} className='img-fluid' alt="" />
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva4'>
+                          <div className="optionTxt">
+                            <h4>lunar<br />grey</h4>
                           </div>
+                          <img src={Option4} className='img-fluid' alt="" />
                         </div>
-                        <div className="col-sm-6 col-md-3">
-                          <div className='bgAshva5'>
-                            <div className="optionTxt">
-                              <h4>mystic<br />black</h4>
-                            </div>
-                            <img src={Option5} className='img-fluid' alt="" />
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva5'>
+                          <div className="optionTxt">
+                            <h4>mystic<br />black</h4>
                           </div>
+                          <img src={Option5} className='img-fluid' alt="" />
                         </div>
-                        <div className="col-sm-6 col-md-3">
-                          <div className='bgAshva6'>
-                            <div className="optionTxt">
-                              <h4>rock<br />&nbsp;</h4>
-                            </div>
-                            <img src={Option6} className='img-fluid' alt="" />
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva6'>
+                          <div className="optionTxt">
+                            <h4>rock<br />&nbsp;</h4>
                           </div>
+                          <img src={Option6} className='img-fluid' alt="" />
                         </div>
-                        <div className="col-sm-6 col-md-3">
-                          <div className='bgAshva7'>
-                            <div className="optionTxt">
-                              <h4>orange<br />&nbsp;</h4>
-                            </div>
-                            <img src={Option7} className='img-fluid' alt="" />
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva7'>
+                          <div className="optionTxt">
+                            <h4>orange<br />&nbsp;</h4>
                           </div>
+                          <img src={Option7} className='img-fluid' alt="" />
                         </div>
-                        <div className="col-sm-6 col-md-3">
-                          <div className='bgAshva8'>
-                            <div className="optionTxt">
-                              <h4>electric<br />blue</h4>
-                            </div>
-                            <img src={Option8} className='img-fluid' alt="" />
+                      </div>
+                      <div className="col-sm-6 col-md-3">
+                        <div className='bgAshva8'>
+                          <div className="optionTxt">
+                            <h4>electric<br />blue</h4>
                           </div>
+                          <img src={Option8} className='img-fluid' alt="" />
                         </div>
                       </div>
                     </div>
-                    <div className="productSpecsBtn">
-                      <p className='herobtn1 text-lowercase text-center'><Link to="https://forms.zohopublic.in/adminathon/form/BookTestDrive1/formperma/mKld_JO84SgHgQchcoYFSbfcdhuuo2tezduouvZjgeE" target='_blank'>Book a Test Ride</Link></p>
+                  </div>
+                  <div className="productSpecsBtn">
+                    <div className='productSpecsBtnCont'>
+                      <p className='herobtn1 text-uppercase text-center'><Link to="https://forms.zohopublic.in/adminathon/form/BookTestDrive1/formperma/mKld_JO84SgHgQchcoYFSbfcdhuuo2tezduouvZjgeE" target='_blank'>Book a Test Ride</Link></p>
                     </div>
+                  </div>
                 </div>
               </div>
             </div>

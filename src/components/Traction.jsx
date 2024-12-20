@@ -29,15 +29,15 @@ const Traction = () => {
                             <li className='traction-listItm'>
                                 <span>2022</span>
                                 <ul>
-                                    <li>Early Deployment & Testing for ASHVA</li>
-                                    <li>Engineering of Models ADVIK and ARAV</li>
-                                    <li>Tactical Collaborations ART PARK</li>
+                                    <li>Early Deployment & Testing for ASHVA 4X4</li>
+                                    <li>Engineering of Models ASHVA UT and ASHVA 4S</li>
+                                    <li>Tactical Collaborations ARTPARK</li>
                                 </ul>
                             </li>
                             <li className='traction-listItm'>
                                 <div className="fourthSlice">
                                     <ul>
-                                        <li>ASHVA V-1 Testing</li>
+                                        <li>ASHVA 4X4 Testing</li>
                                         <li>Assisted Autonomous Development Initiated</li>
                                         <li>ARTPARK CAMRAS - 2</li>
                                     </ul>

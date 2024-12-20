@@ -72,8 +72,8 @@ function Header1({caseType}) {
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <Link onClick={handleShow}>Products</Link>
-                                    <Link to="/service" onClick={handleClose}>Service</Link>
-                                    <Link to="/adbhut" onClick={handleClose}>Agri Robotics</Link>
+                                    <Link to="/service" onClick={handleClose}>Services</Link>
+                                    <Link to="/adbhut" onClick={handleClose}>Agri & Robotics</Link>
                                     <NavDropdown
                                         title="About us"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}

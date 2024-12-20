@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import Header1 from '../components/Header1';
 import { Col, Row } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react'
+import Ashva6x6Broucher from '../assets/docs/ashva_6x6_brochure.pdf'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -94,6 +95,9 @@ const Ashva6x6 = () => {
             }
           </Swiper>
           <div className="product-line-bottom">
+            <div className="d-flex justify-content-center">
+              <a href={Ashva6x6Broucher} className='btn brouch_btn2' target='_blank'>Download Brochure</a>
+            </div>
             <div className="product-sepcs">
               <h4 className="product-spec-title">TECHNICAL SPECIFICATION</h4>
               <div className="row">

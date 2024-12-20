@@ -51,14 +51,15 @@
     background-color: var(--black);
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: var(--white) !important;
 }
 
 .expLinkHead {
     display: inline-block;
     padding: 5px 16px;
-    background: linear-gradient(91deg, #CFCECC -2.06%, #5C6262 -2.04%, #808485 18.19%, #BBBFC2 50.6%, #ECE5E5 98.91%, #C0C1C5 159.71%);
+    background: linear-gradient(91deg, #5C6262 -8.68%, #CFCECC -8.68%, #808485 -0.55%, #BBBFC2 28.23%, #ECE5E5 76.2%, #C0C1C5 95.03%);
     color: black !important;
     font-weight: bold;
     font-family: Arial, sans-serif;
@@ -69,15 +70,15 @@
 }
 
 .expLinkHead::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -20px;
-  width: 0;
-  height: 0;
-  border-top: 15.5px solid transparent;
-  border-bottom: 15.5px solid transparent;
-  border-left: 20px solid #E9E3E3;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-top: 15.5px solid transparent;
+    border-bottom: 15.5px solid transparent;
+    border-left: 20px solid #c0c1c5fa;
 }
 
 .offcanvas-header .btn-close {
@@ -154,13 +155,16 @@
 }
 
 .herobtn1 {
-    background: rgb(15, 15, 15);
-    background: linear-gradient(45deg, rgba(15, 15, 15, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    color: #fff !important;
-    border: var(--white) !important;
+    background: var(--black);
     border-radius: 0px !important;
     padding: .4rem 1.5rem !important;
     margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(91deg, #5C6262 -2.08%, #808485 -2.08%, #CFCECC 4.29%, #BBBFC2 34.35%, #ECE5E5 62.36%, #C0C1C5 101.17%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .heroMdl .modal-content {
@@ -602,12 +606,25 @@
 .mainVdoSec .mainCont .mainContTxt .brouch_btn {
     border: 1px solid var(--white) !important;
     color: var(--white) !important;
+    border-radius: 0;
+}
+
+.brouch_btn2 {
+    border: 1px solid var(--black) !important;
+    color: var(--black) !important;
+    border-radius: 0 !important;
+}
+
+.brouch_btn2:hover {
+    border: 1px solid var(--black) !important;
+    color: var(--white) !important;
+    background: var(--black) !important;
 }
 
 .mainVdoSec .mainCont .mainContTxt .brouch_btn:hover {
-    border: 1px solid #363E52 !important;
-    color: var(--white) !important;
-    background: #363E52;
+    border: 1px solid var(--white) !important;
+    color: var(--black) !important;
+    background: var(--white);
 }
 
 .mainVdoSec .mainCont .playBtn {
@@ -756,6 +773,10 @@
 .productSpecsBtn {
     padding: 1rem 1.5rem;
     margin-top: 1.5rem;
+}
+
+.productSpecsBtnCont {
+    background-color: var(--black);
 }
 
 .productSpecsBtn a {
@@ -1622,8 +1643,9 @@ footer .footer-bottom .footer-bottomRT span {
     width: 210px;
     z-index: 1100;
     font-family: 'Lato', sans-serif;
-  }
-  .sticky li {
+}
+
+.sticky li {
     list-style-type: none;
     border-radius: 30px;
     height: 48px;
@@ -1638,35 +1660,41 @@ footer .footer-bottom .footer-bottomRT span {
     box-shadow: 0 0 7px 0 #d5d5d5;
     display: flex;
     align-items: center;
-  }
-  .sticky li:hover {
+}
+
+.sticky li:hover {
     margin-left: -155px;
-  }
-  .sticky li i {
+}
+
+.sticky li i {
     float: left;
-    padding:6px;
+    padding: 6px;
     margin-right: 16px;
     background: yellow;
-    border-radius:20px;;
-    height:40px;
-    width:40px;
+    border-radius: 20px;
+    ;
+    height: 40px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-  }
-  .sticky li p {
+
+}
+
+.sticky li p {
     margin: 0px;
     line-height: 16px;
     font-size: 14px;
     font-weight: 600;
     float: left;
-  }
-  .sticky li p a {
+}
+
+.sticky li p a {
     text-decoration: none;
     color: #333;
     font-size: 14px;
-  }
-  .sticky li p a:hover {
+}
+
+.sticky li p a:hover {
     color: #222;
-  }
+}
